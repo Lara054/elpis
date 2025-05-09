@@ -1,14 +1,21 @@
 import React from "react";
+import Hero from '../components/Hero';
 
 function AboutPage() {
     return (
         <main>
             {/* <!-- ヒーロー --> */}
-            <section class="hero">
-                <div class="container">
-                    <h1>エルピスについて</h1>
-                </div>
-            </section>
+            <Hero>
+                <h1>エルピス</h1>
+                <h3>
+                    ここは、精神的な病を抱えている方のための場所です。
+                    <br />
+                    「治療を受けてきたけれど、改善が見られなかった」
+                    <br />
+                    「病名はついているけれど、どう付き合っていいかわからない」
+                </h3>
+            </Hero>
+
             <section class="about" id="about">
                 <div class="container column fade-in">
 

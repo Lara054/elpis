@@ -1,35 +1,30 @@
 import React from "react";
+import Hero from '../components/Hero';
 
 function HomePage() {
     return (
         <main>
+            <Hero title="エルピス" subTitle="あなたが今、気になっていることはありますか？">
 
-            {/* <!-- ヒーロー --> */}
-            <section class="hero">
-                <div class="container column">
-                    <h1 class="fade-item">エルピス</h1>
-                    {/* <!-- ヒーローナビ --> */}
-                    <h3 class="fade-item">あなたが今、気になっていることはありますか？</h3>
-                    <div class="fade-item hero-nav-items row">
-                        <a href="#about" class="hero-nav-item column offset">
-                            <img src="../images/hero-nav-thinking.png" alt="" width="100" />
-                            <p>エルピスって何？</p>
-                        </a>
-                        <a href="#counselor" class="hero-nav-item column">
-                            <img src="../images/hero-nav-listen.png" alt="" width="100" />
-                            <p>どんな人とお話しするの？</p>
-                        </a>
-                        <a href="#cases" class="hero-nav-item column">
-                            <img src="../images/hero-nav-thinking.png" alt="" width="100" />
-                            <p>症例や実績は？</p>
-                        </a>
-                        <a href="#use-cases" class="hero-nav-item column offset">
-                            <img src="../images/hero-nav-listen.png" alt="" width="100" />
-                            <p>どんな人が来てるの？</p>
-                        </a>
-                    </div>
+                <div className="fade-item hero-nav-items row">
+                    <a href="#about" className="hero-nav-item column offset">
+                        <img src="../images/hero-nav-thinking.png" alt="" width="100" />
+                        <p>エルピスって何？</p>
+                    </a>
+                    <a href="#counselor" className="hero-nav-item column">
+                        <img src="../images/hero-nav-listen.png" alt="" width="100" />
+                        <p>どんな人とお話しするの？</p>
+                    </a>
+                    <a href="#cases" className="hero-nav-item column">
+                        <img src="../images/hero-nav-thinking.png" alt="" width="100" />
+                        <p>症例や実績は？</p>
+                    </a>
+                    <a href="#use-cases" className="hero-nav-item column offset">
+                        <img src="../images/hero-nav-listen.png" alt="" width="100" />
+                        <p>どんな人が来てるの？</p>
+                    </a>
                 </div>
-            </section>
+            </Hero>
             {/* <!-- <section class="curved"></section> --> */}
 
 

@@ -1,19 +1,23 @@
 import React from "react";
+import Hero from '../components/Hero';
 
 function ContactPage() {
     return (
         <main>
-            <section class="hero">
-                <div class="container column">
-                    <h1>お問い合わせ</h1>
-                    <div class="hero-content">
-                        <p>
-                            サービスに関するご質問、ご不明点などがございましたら、以下のフォームよりお気軽にお問い合わせください。
-                            <br />※ご相談予約は<a href="reserve.html">こちらのフォームからお願いいたします。</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
+
+            {/* <!-- ヒーローセクション --> */}
+            <Hero
+                title="お問い合わせ"
+                subTitle={
+                    <>
+                        サービスに関するご質問、ご不明点などがございましたら、以下のフォームよりお気軽にお問い合わせください。
+                        <br />
+                        ※ご相談予約は
+                        <a href="reserve.html">こちらのフォームからお願いいたします。</a>
+                    </>
+                }
+            />
+
             <section class="faq">
                 <div class="container column">
                     <h2>よくある質問</h2>

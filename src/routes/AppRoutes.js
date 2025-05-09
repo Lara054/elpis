@@ -8,7 +8,7 @@ import ContactPage from '../pages/ContactPage';
 function AppRoutes() {
     return (
         <BrowserRouter>
-            <Header /> {/* ✅ ここに移動 */}
+            <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
