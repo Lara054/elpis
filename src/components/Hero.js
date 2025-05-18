@@ -1,14 +1,14 @@
 import React from 'react';
+import '../css/components/hero.css';
 
-function Hero({ title, subTitle, children }) {
+function Hero({ title, subTitle }) {
     return (
-        <section className="hero">
+        <div className="hero">
             <div className="container column">
                 {title && <h1 className="hero__title">{title}</h1>}
                 {subTitle && <h3 className="hero__subTitle">{subTitle}</h3>}
-                {children}
             </div>
-        </section>
+        </div>
     );
 }
 

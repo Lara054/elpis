@@ -1,0 +1,73 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #000;
+    line-height: 0;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #000;
+    line-height: 0;
+}
+
+
+.nav-right .row {
+    gap: 20px;
+}
+
+.nav-right {
+    gap: 10px;
+    align-items: flex-end;
+
+
+}
+
+/* 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tel {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+} */
+
+
+
+
+
+
+/* header {
+    background-image: url("/images/header/header-background-image.png");
+    background-size: cover;
+    background-position: bottom;
+
+    background-repeat: no-repeat;
+} */

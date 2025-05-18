@@ -1,0 +1,120 @@
+/* ここからヒーローナビ */
+.hero-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+/* .hero-nav-title {
+    font-size: 1rem;
+    font-weight: bold;
+} */
+
+
+.hero-nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-weight: bold;
+}
+
+.hero-nav-items a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero-nav-item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+    background-color: transparent;
+}
+
+.hero-nav-item p {
+    height: 50px;
+
+}
+
+
+.hero-nav-items img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+/* ここまでヒーローナビ */
+
+/* ここからエルピスって何 */
+.about {
+    align-items: center;
+    text-align: center;
+    background-image: url(/images/home/home-about-background-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.detail-button {
+    margin-top: 50px;
+    width: 100%;
+    /* max-width: 300px;
+    height: auto; */
+}
+
+.detail-button img {
+
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* ここまでエルピスって何 */
+
+/* どんな人が話を聞いてくれるの？ */
+.counselor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.counselor-main {
+    display: flex;
+    gap: 100px;
+}
+
+.counselor-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.counselor-right {
+    flex: 1;
+}
+
+.counselor-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.support-member-item img {
+    width: 60%;
+    border-radius: 20px;
+}
+
+/* どんな人が話を聞いてくれるの？ */
