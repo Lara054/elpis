@@ -20,7 +20,6 @@ function Header() {
             <a href="tel:08052750753" className="tel"><img src="/images/header/tel.png" alt="電話番号" /></a>
 
             <div className="row">
-
               <li><Link to="/">ホーム</Link></li>
               <div>|</div>
               <li><Link to="/">施設紹介</Link></li>
