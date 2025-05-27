@@ -10,9 +10,9 @@ function Header() {
   return (
     <header>
       <nav>
-        <ul>
+        <ul className='nav'>
           <div className="nav-left">
-            <li><Link to="/"> <img src="/images/header/logo.png" alt="エルピスのロゴ" className="logo" /></Link></li>
+            <li><Link to="/"> <img src="/images/header/logo.png" alt="エルピスのロゴ" /></Link></li>
           </div>
 
           <div className='nav-right column'>
@@ -20,6 +20,7 @@ function Header() {
             <a href="tel:08052750753" className="tel"><img src="/images/header/tel.png" alt="電話番号" /></a>
 
             <div className="row">
+
               <li><Link to="/">ホーム</Link></li>
               <div>|</div>
               <li><Link to="/">施設紹介</Link></li>
