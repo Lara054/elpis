@@ -4,7 +4,7 @@
     height: auto;
     color: white;
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 .button .row {
@@ -15,5 +15,5 @@
 
 .button a {
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
