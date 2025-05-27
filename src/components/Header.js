@@ -1,6 +1,7 @@
 // Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from './Button';
 import '../css/common.css';
 import '../css/components/header.css';
 
@@ -19,14 +20,17 @@ function Header() {
             <a href="tel:08052750753" className="tel"><img src="/images/header/tel.png" alt="電話番号" /></a>
 
             <div className="row">
-              <li><Link to="/about">エルピスについて</Link></li>
+              <li><Link to="/">ホーム</Link></li>
               <div>|</div>
               <li><Link to="/">施設紹介</Link></li>
               <div>|</div>
-              <li><Link to="/">カウンセラーの想い</Link></li>
+              <li><Link to="/counselor">カウンセラーの想い</Link></li>
               <div>|</div>
               <li><Link to="/">料金について</Link></li>
-              <a href="/"><img src="/images/header/contact.png" alt="相談はこちら" /></a>
+              <div>
+
+                <Button text="ご相談はこちら" link="/"></Button>
+              </div>
             </div>
 
           </div>

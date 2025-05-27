@@ -1,14 +1,17 @@
-// Header.js
+// Button.js
 import React from 'react';
 
 import '../css/components/button.css';
 
-function Button(text) {
+function Button({ text, link }) {
     return (
         <div className='button'>
-            {text}
+            <a href={link} className='row'>
+                {text}
+                {/* <img src='images/icon/right-arrow.png' alt='右矢印' /> */}
+            </a>
         </div>
     );
 }
 
-export default Header;
+export default Button;

@@ -41,7 +41,6 @@
 
 .hero-nav-item p {
     height: 50px;
-
 }
 
 
@@ -60,6 +59,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    gap: 50px;
 }
 
 .detail-button {
@@ -70,7 +70,6 @@
 }
 
 .detail-button img {
-
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -118,3 +117,10 @@
 }
 
 /* どんな人が話を聞いてくれるの？ */
+
+.use-cases {
+    background-image: url(/images/home/home-use-case-background-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -40,15 +40,11 @@ function HomePage() {
             {/* <!-- エルピスって何 --> */}
             <section class="about column" id="about">
                 <h2>エルピスとは？</h2>
-                <div class=""></div>
                 <p>エルピスは、統合失調症、双極性障害、うつ病など、精神的な病を抱えている方のための場所です。「治療を受けてきたけれど、改善が見られなかった」「病名はついているけれど、どう付き合っていいかわからない」そんな方が、少しずつ“自分らしさ”を取り戻していくために、カウンセラーと話しながら、一緒に整えていく場所です。
                     医療機関では「改善が難しい」と言われた症状でも、 実際にここで落ち着きを取り戻した方が何人もいます。
                     お薬や診断だけではたどり着けなかった回復の形を、 私たちは “人と人との関わり” の中で探していきます。
                 </p>
-                <Button></Button>
-                <div>
-                    <a href="" class="detail-button"><img src="/images/home/home-detail-button-image.png" alt="詳細はこちら" /></a>
-                </div>
+                <Button text="詳細はこちら" link="/"></Button>
             </section>
 
             {/* <!-- どんな人が話を聞いてくれるの？ --> */}
@@ -69,7 +65,7 @@ function HomePage() {
                             でも、“本当に良くなりたい”という気持ちがあるなら、
                             私はその覚悟に応えます。
                         </p>
-                        <div class="button white"><Link to="/about">カウンセラーの想い</Link></div>
+                        <Button text="カウンセラーの想い" link="/"></Button>
                     </div>
                     <div class="counselor-right">
                         <img src="../images/person/wonyon.jpg" alt="今西三千代の写真" />
@@ -98,7 +94,7 @@ function HomePage() {
             {/* <!-- どんな人が来てるの？ --> */}
             <section class="use-cases fade-in" id="use-cases">
                 <div class="container column">
-                    <h2>こんな方がご利用されています</h2>
+                    <h2>対象となる症状やご相談例</h2>
                     <div class="use-cases-items column">
                         <div class="use-cases-item row">
                             <div class="left">
@@ -152,6 +148,7 @@ function HomePage() {
 
                 </div>
             </section>
+
         </main>
     );
 }
