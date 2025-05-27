@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from '../components/Hero';
 import Button from '../components/Button';
+import Map from '../components/Map';
 import { Link } from "react-router-dom";
 import '../css/pages/home.css';
 import '../css/common.css'
@@ -28,7 +29,7 @@ function HomePage() {
                     </a>
                     <a href="#use-cases" className="hero-nav-item column offset">
                         <img src="../images/hero/hero-nav-listening.png" alt="" width="100" />
-                        <p>どんな人が来てるの？</p>
+                        <p>どんな人が対象なの？</p>
                     </a>
                     <a href="#access" className="hero-nav-item column">
                         <img src="../images/hero/hero-nav-helper.png" alt="" width="100" />
@@ -93,56 +94,40 @@ function HomePage() {
 
             {/* <!-- どんな人が来てるの？ --> */}
             <section className="use-cases fade-in" id="use-cases">
-                <div className="container column">
-                    <h2>対象となる症状やご相談例</h2>
-                    <div className="use-cases-items column">
-                        <div className="use-cases-item row">
-                            <div className="left">
-                                <p>うつ状態にある</p>
-                            </div>
-                            <div className="center"></div>
-                            <div className="right">
-                                <p>子供が言うことを聞いてくれない</p>
-                            </div>
+                <div className="column">
+                    <h2>対象となる症状や実績</h2>
+                    <div className="column">
+                        <div className="row">
+
+
                         </div>
-                        <div className="use-cases-item row">
-                            <div className="left"></div>
-                            <div className="center">
-                                <p>統合失調に苦しんでいる</p>
-                            </div>
-                            <div className="right"></div>
-                        </div>
-                        <div className="use-cases-item row">
-                            <div className="left">
-                                <p>生きるのが辛い</p>
-                            </div>
-                            <div className="center"></div>
-                            <div className="right">
-                                <p>よる眠ることができない</p>
-                            </div>
-                        </div>
+
                     </div>
+
+
+
                 </div>
 
             </section>
             <section className="access fade-in" id="access">
-                <div className="container column">
+                <div className="column">
                     <h2>アクセス</h2>
-                    <img src="../images/map.png" alt="地図" />
+                    <Map />
+                    <br />
+                    <div>＊最寄の駅（東金駅、成東駅）まで車でお迎えにあがります。</div>
                     <div className="info column">
 
                         <div className="map-info row">
                             <h3>所在地：</h3>
-                            <div>111-1111 千葉県〇〇市〇〇町1-1-1</div>
+                            <p>111-1111 千葉県〇〇市〇〇町1-1-1</p>
                         </div>
-                        <div>＊最寄の駅（東金駅、成東駅）まで車でお迎えにあがります。</div>
                         <div className="map-info row">
-                            <h3>電話：</h3>
-                            <div>000-0000-0000</div>
+                            <h3>電話　：</h3>
+                            <p>000-0000-0000</p>
                         </div>
                         <div className="map-info row">
                             <h3>メール：</h3>
-                            <div>test@example.com</div>
+                            <p>test@example.com</p>
                         </div>
                     </div>
 
