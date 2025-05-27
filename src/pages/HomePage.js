@@ -71,7 +71,7 @@ function HomePage() {
                         <img src="../images/person/wonyon.jpg" alt="今西三千代の写真" />
                     </div>
                 </div>
-                <div className="support-member container column fade-in">
+                {/* <div className="support-member container column fade-in">
                     <h3>サポートメンバー</h3>
                     <div className="support-member-items row">
                         <div className="support-member-item column">
@@ -88,7 +88,7 @@ function HomePage() {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
             </section>
 
             {/* <!-- どんな人が来てるの？ --> */}
