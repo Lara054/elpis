@@ -1,0 +1,18 @@
+.counselor_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+    padding: 100px 200px;
+}
+
+.counselor_content>div {
+    margin: 16px 0;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: start;
+}

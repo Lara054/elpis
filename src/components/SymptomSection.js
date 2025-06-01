@@ -1,0 +1,67 @@
+import React from 'react';
+import '../css/components/symptom_section.css';
+
+const symptoms = [
+    {
+        title: 'うつ病',
+        description: 'うつは、心が自分の内側に閉じてしまうことで深まります。でも、誰かを思いやり関わるうちに、自然と心が外に向きはじめる――私はその変化こそが、回復のはじまりだと感じています。'
+    },
+    {
+        title: '統合失調症',
+        description: '幻聴や被害妄想などでお困りの方への支援実績があります。'
+    },
+    {
+        title: '認知症',
+        description: '記憶障害・徘徊・混乱など、生活に不安のある方に対応。'
+    },
+    {
+        title: '自閉症',
+        description: '発語の遅れ・感覚過敏・他者との関わりが難しい方に。'
+    },
+];
+
+const cases = [
+    {
+        condition: '【自閉症】5歳男児／発語なし・目を合わせない',
+        support: '1対1の生活支援・感覚統合的アプローチ・日常からのアプローチを継続的に実施。',
+        result: '半年後には「おはよう」「ママ」などの言葉が出るようになり、目も合うように。'
+    },
+    {
+        condition: '【うつ】40代女性／不眠・無気力・閉じこもり',
+        support: '生活リズムの改善支援と、距離感を尊重した対話を継続。',
+        result: '1年後には日中に外出し、近所の公園にひとりで行けるように。'
+    }
+];
+
+const SymptomSection = () => {
+    return (
+        <section className="symptom-section">
+            <h2 className="section-title">改善された症状の一例</h2>
+            <p className="section-lead">
+                エルピスでは、病名や診断にとらわれず、「その人らしさ」を大切に支援しています。<br />
+                以下は、これまでに対応してきた症状と、支援によって変化が見られた実例です。
+            </p>
+
+            <div className="symptom-list">
+                {symptoms.map((symptom, idx) => (
+                    <div key={idx} className="symptom-card">
+                        <h3>{symptom.title}</h3>
+                        <p>{symptom.description}</p>
+                    </div>
+                ))}
+            </div>
+
+            <div className="case-list">
+                {cases.map((c, idx) => (
+                    <div key={idx} className="case-card">
+                        <p className="case-condition">{c.condition}</p>
+                        <p><strong>支援：</strong>{c.support}</p>
+                        <p><strong>変化：</strong>{c.result}</p>
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+};
+
+export default SymptomSection;

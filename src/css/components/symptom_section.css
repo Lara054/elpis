@@ -1,0 +1,73 @@
+.symptom-section {
+    padding: 10rem 10rem;
+    margin: 0 auto;
+    background-image: url(/images/home/home-use-case-background-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.section-lead {
+    font-size: 1.1rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.symptom-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .symptom-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.symptom-card {
+    background-color: #ffffffcc;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+}
+
+.symptom-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.symptom-card p {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.case-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.case-card {
+    background-color: #ffffffcc;
+    border-left: 5px solid #548800;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.case-condition {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}

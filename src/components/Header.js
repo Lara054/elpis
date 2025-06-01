@@ -22,14 +22,14 @@ function Header() {
             <div className="row">
               <li><Link to="/">ホーム</Link></li>
               <div>|</div>
-              <li><Link to="/">施設紹介</Link></li>
+              <li><Link to="/facility">施設紹介</Link></li>
               <div>|</div>
               <li><Link to="/counselor">カウンセラーの想い</Link></li>
               <div>|</div>
-              <li><Link to="/">料金について</Link></li>
+              {/* <li><Link to="/">料金について</Link></li> */}
               <div>
 
-                <Button text="ご相談はこちら" link="/"></Button>
+                <Button text="ご相談はこちら" link="/contact"></Button>
               </div>
             </div>
 

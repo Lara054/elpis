@@ -1,0 +1,10 @@
+.icon-text img {
+    width: 100px;
+    height: auto;
+}
+
+.icon-text p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #375900;
+}

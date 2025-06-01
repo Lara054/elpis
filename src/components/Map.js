@@ -5,7 +5,7 @@ const Map = () => {
         <div style={{ width: '100%', height: '300px' }}>
             <iframe
                 title="Google Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4424.5394170987765!2d140.3797198044402!3d35.589207210836314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022eaf76be67665%3A0x321005e98ace9cf3!2z5a6244Gu5a2Q77yI44OQ44K577yJ!5e0!3m2!1sja!2sjp!4v1748347498407!5m2!1sja!2sjp"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6488.553931603157!2d140.380197!3d35.59623400000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022eafd3c22d6d3%3A0xb18eec04be9f7a0d!2z5pel5pys44CB44CSMjgzLTAwMDEg5Y2D6JGJ55yM5p2x6YeR5biC5a625LmL5a2Q77yR77yW77yX77yR4oiS77yT77yV!5e0!3m2!1sja!2sus!4v1748739358076!5m2!1sja!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -18,3 +18,4 @@ const Map = () => {
 };
 
 export default Map;
+

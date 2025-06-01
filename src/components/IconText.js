@@ -1,10 +1,11 @@
 import React from "react";
+import '../css/components/icon_text.css';
 
 const IconText = ({ icon, text }) => {
     return (
         <div className="icon-text">
             <img src={icon} alt={text} />
-            <span>{text}</span>
+            <p>{text}</p>
         </div>
     );
 }
