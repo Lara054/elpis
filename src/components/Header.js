@@ -28,7 +28,6 @@ function Header() {
               <div>|</div>
               {/* <li><Link to="/">料金について</Link></li> */}
               <div>
-
                 <Button text="ご相談はこちら" link="/contact"></Button>
               </div>
             </div>

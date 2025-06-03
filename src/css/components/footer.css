@@ -1,0 +1,14 @@
+.footer {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.information-content div {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}

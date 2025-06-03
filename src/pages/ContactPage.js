@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '../components/Button';
 import Hero from '../components/Hero';
 
+
 function ContactPage() {
     const [formData, setFormData] = useState({
         name: '',
@@ -99,6 +100,7 @@ function ContactPage() {
                     </form>
                 )}
             </div>
+
         </main>
     );
 }
@@ -106,7 +108,7 @@ function ContactPage() {
 const styles = {
     container: {
         maxWidth: '500px',
-        margin: '40px auto',
+        margin: '80px auto',
         padding: '30px',
         background: '#fff',
         borderRadius: '12px',

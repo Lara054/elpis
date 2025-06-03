@@ -44,3 +44,27 @@ p {
     align-items: center;
     text-align: center;
 }
+
+
+.information {
+    padding: 50px 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: rgb(206, 206, 206);
+}
+
+.information-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff7a;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+}

@@ -4,6 +4,7 @@ import '../css/common.css';
 import '../css/pages/counselor.css';
 
 
+
 function Counselor() {
     return (
         <main>
@@ -41,6 +42,7 @@ function Counselor() {
                 </div>
 
             </div>
+
         </main>
     );
 }
