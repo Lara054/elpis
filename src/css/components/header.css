@@ -1,11 +1,11 @@
 .nav {
     height: 100px;
-    margin: 0px 30px;
+    margin: 0px 10px;
 }
 
 .nav-left img {
-    height: 200px;
-    width: auto;
+    height: auto;
+    max-width: 200px;
     overflow: hidden;
     display: inline-block;
 }
@@ -41,7 +41,7 @@ ul {
 
 
 .nav-right .row {
-    gap: 50px;
+    gap: 30px;
 }
 
 .nav-right {
@@ -49,7 +49,22 @@ ul {
     align-items: flex-end;
 }
 
+.tel img {
+    max-width: 200px;
+    height: auto;
+}
 
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav-right .row {
+        gap: 10px;
+    }
+
+    .nav-left img {
+        max-width: 150px;
+    }
+
+}
 
 /* 
 .contact {

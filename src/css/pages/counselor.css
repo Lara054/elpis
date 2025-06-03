@@ -16,3 +16,13 @@
     border-radius: 8px;
     text-align: start;
 }
+
+@media (max-width: 768px) {
+    .counselor_content {
+        padding: 50px 20px;
+    }
+
+    .counselor_content>div {
+        padding: 30px;
+    }
+}

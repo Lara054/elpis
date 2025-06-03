@@ -53,5 +53,13 @@
     font-size: 1.1rem;
     color: #4b5563;
     border-radius: 0.5rem;
-    margin: 10rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+
+    .construction-banner {
+        padding: 2rem;
+        font-size: 1rem;
+    }
 }
