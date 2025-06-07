@@ -24,7 +24,7 @@ const FacilityPage = () => {
     return (
         <main>
 
-            <Hero title="施設紹介" subTitle="エルピスの居場所について" />
+            <Hero title="施設紹介" />
             <section className="section">
 
                 {underConstruction ? (

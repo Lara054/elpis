@@ -1,33 +1,52 @@
 section {
-    padding: 150px 15vw;
+    padding: 150px 10%;
+}
+
+:root {
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.5rem;
+    --font-size-p: 1.1rem;
+    --font-size-small: 0.95rem;
+    --font-color-main: #686868;
+}
+
+body {
+    color: var(--font-color-main);
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-h1);
     font-weight: 700;
     margin-bottom: 20px;
+    color: var(--font-color-main);
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
     font-weight: 700;
     margin-bottom: 20px;
+    color: var(--font-color-main);
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-h3);
     font-weight: 700;
     margin-bottom: 20px;
+    color: var(--font-color-main);
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: var(--font-size-p);
     font-weight: 400;
     margin-bottom: 20px;
     line-height: 1.6;
-
+    color: var(--font-color-main);
 }
 
+.small {
+    font-size: var(--font-size-small);
+}
 
 .column {
     display: flex;
@@ -67,4 +86,45 @@ p {
     border-radius: 0.75rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     padding: 3rem;
+}
+
+a {
+    color: var(--font-color-main);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+    color: #3182ce;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 20px 20px;
+    }
+
+    .information {
+        padding: 30px 5vw;
+    }
+
+    .information-content {
+        padding: 2rem;
+    }
+
+    :root {
+        --font-size-h1: 1.5rem;
+        --font-size-h2: 1.2rem;
+        --font-size-h3: 1rem;
+        --font-size-p: 0.98rem;
+        --font-size-small: 0.85rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        font-size: unset;
+    }
 }

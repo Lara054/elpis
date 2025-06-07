@@ -4,8 +4,8 @@
 }
 
 .nav-left img {
-    height: auto;
     max-width: 200px;
+    height: auto;
     overflow: hidden;
     display: inline-block;
 }
@@ -29,13 +29,11 @@ ul {
 
 .nav-left a {
     text-decoration: none;
-    color: #000;
     line-height: 0;
 }
 
 .nav-right a {
     text-decoration: none;
-    color: #000;
     line-height: 0;
 }
 
@@ -55,7 +53,7 @@ ul {
 }
 
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 701px) and (max-width: 1024px) {
     .nav-right .row {
         gap: 10px;
     }
@@ -92,3 +90,82 @@ ul {
 
     background-repeat: no-repeat;
 } */
+
+.pc-menu {
+    display: flex;
+}
+
+.hamburger-menu {
+    display: none;
+    align-items: center;
+    position: relative;
+    /* メニューの絶対配置の基準にする */
+}
+
+.hamburger-button {
+    font-size: 2.2rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--font-color-main);
+}
+
+.menu-dropdown {
+    display: none;
+    /* 初期状態で非表示 */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-17%);
+    right: auto;
+    /* 右端指定を解除 */
+    background-color: rgba(255, 255, 255, 0.601);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    /* 他の要素に隠れないように設定 */
+    min-width: 160px;
+}
+
+.menu-dropdown.open {
+    display: block;
+    /* メニューが開いたときに表示 */
+}
+
+.menu-dropdown ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.menu-dropdown li {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.menu-dropdown a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* スマホサイズでのスタイル */
+@media (max-width: 701px) {
+    .pc-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+    }
+}

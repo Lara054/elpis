@@ -17,6 +17,24 @@
     text-align: start;
 }
 
+.counselor-more-btn {
+    background: none;
+    border: none;
+    color: #3599e5c9;
+    font-size: 1em;
+    padding: 0 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: text-decoration 0.2s;
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.counselor-more-btn:hover {
+    text-decoration: underline;
+    background: none;
+}
+
 @media (max-width: 768px) {
     .counselor_content {
         padding: 50px 20px;

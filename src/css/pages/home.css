@@ -15,24 +15,30 @@
 
 
 .hero-nav-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
     list-style: none;
-    gap: 50px;
     font-weight: bold;
+    justify-items: center;
+    align-items: center;
 }
 
 .hero-nav-items a {
     text-decoration: none;
-    color: #000;
 }
 
 .hero-nav-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    list-style: none;
+    font-weight: bold;
+
 }
 
 .hero-nav-items p {
@@ -40,14 +46,47 @@
 }
 
 .hero-nav-item {
-    width: 22%;
+    min-width: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-nav-item img {
     max-width: 200px;
     height: auto;
     border-radius: 100px;
+}
+
+@media (max-width: 900px) {
+    .hero-nav-items {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 500px;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-nav-items {
+        max-width: 98vw;
+        gap: 1rem;
+    }
+
+    .hero-nav-item {
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-nav-items {
+        gap: 0.7rem;
+    }
+
+    .hero-nav-item {
+        min-width: 100px;
+    }
 }
 
 /* ここまでヒーローナビ */
@@ -79,6 +118,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: #ffffffcc;
     border-radius: 0.75rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
@@ -96,8 +136,6 @@
 .detail-button {
     margin-top: 50px;
     width: 100%;
-    /* max-width: 300px;
-    height: auto; */
 }
 
 .detail-button img {
@@ -192,7 +230,22 @@
     border-radius: 25px;
 }
 
+.acssess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
 @media (max-width: 768px) {
+    .counselor-right img {
+        max-width: 50%;
+        height: auto;
+        border-radius: 20px;
+    }
+
     .hero-nav-item {
         width: 45%;
     }
