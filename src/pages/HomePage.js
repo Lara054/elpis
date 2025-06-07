@@ -20,9 +20,11 @@ function HomePage() {
 お薬や診断だけではたどり着けなかった回復の形を、 私たちは “人と人との関わり” の中で探していきます。`;
     const counselorText = `平成４年９月１日より５０歳になるまで何人もの方々の助けを得て今生かされているかと思う度、何のお返しもしていない私はその方々にお返しするのは申し訳ないので、貧しい人や病んでいる人々の助け手になるべく精神の身体の重荷を少しでも平安になれる心と体を鍛えて、また子供たちや心の交じう方々の助けによってこの施設をおよそ２８年間ものあいだ続けられてきたようにどこまでいっても誰かに助けられています。「お互いに助けあう」施設です。老人スタッフ３人（７０歳以上）若者５人の心を一つにした者によって成り立っている所です。牡蠣の殻なる牡蠣の身のかくも涯てなき海にして　生きのいのちの味気なき　その思いこそかなしけれ　と歌っています。その生命に喜びと感謝を感じられる施設だと思います。`;
 
-    // 100文字で分割
-    const aboutShort = aboutText.length > 100 ? aboutText.slice(0, 100) + '…' : aboutText;
-    const counselorShort = counselorText.length > 100 ? counselorText.slice(0, 100) + '…' : counselorText;
+    // 文字数制御
+    const aboutLimit = window.innerWidth > 900 ? 400 : 100;
+    const counselorLimit = window.innerWidth > 900 ? 400 : 100;
+    const aboutShort = aboutText.length > aboutLimit ? aboutText.slice(0, aboutLimit) + '…' : aboutText;
+    const counselorShort = counselorText.length > counselorLimit ? counselorText.slice(0, counselorLimit) + '…' : counselorText;
 
     return (
         <main>
@@ -59,8 +61,8 @@ function HomePage() {
                 <h2>エルピスとは？</h2>
                 <div className="about-content-right">
                     <p>
-                        {showAboutFull || aboutText.length <= 100 ? aboutText : aboutShort}
-                        {aboutText.length > 100 && (
+                        {showAboutFull || aboutText.length <= aboutLimit ? aboutText : aboutShort}
+                        {aboutText.length > aboutLimit && (
                             <button className="counselor-more-btn" style={{ marginLeft: '8px' }} onClick={() => setShowAboutFull(v => !v)}>
                                 {showAboutFull ? '閉じる' : 'もっと見る'}
                             </button>
@@ -79,8 +81,8 @@ function HomePage() {
                         <h2>カウンセラー紹介</h2>
                         <p className="counselor-name">代表取締役　今西三千代</p>
                         <p>
-                            {showCounselorFull || counselorText.length <= 100 ? counselorText : counselorShort}
-                            {counselorText.length > 100 && (
+                            {showCounselorFull || counselorText.length <= counselorLimit ? counselorText : counselorShort}
+                            {counselorText.length > counselorLimit && (
                                 <button className="counselor-more-btn" style={{ marginLeft: '8px' }} onClick={() => setShowCounselorFull(v => !v)}>
                                     {showCounselorFull ? '閉じる' : 'もっと見る'}
                                 </button>
