@@ -3,13 +3,10 @@ import React from 'react';
 
 import '../css/components/button.css';
 
-function Button({ text, link }) {
+function Button({ text }) {
     return (
         <div className='button'>
-            <a href={link} className='row'>
-                {text}
-                {/* <img src='images/icon/right-arrow.png' alt='右矢印' /> */}
-            </a>
+            {text}
         </div>
     );
 }

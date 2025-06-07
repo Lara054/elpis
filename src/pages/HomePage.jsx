@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Button from '../components/Button';
 import Map from '../components/Map';
 import SymptomSection from '../components/SymptomSection';
+import { Link } from 'react-router-dom';
 
 import '../css/pages/home.css';
 import '../css/common.css';
@@ -43,19 +44,19 @@ function HomePage() {
                 </div>
                 <div className="fade-item hero-nav-items row">
                     <a href="#about" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('about'); }}>
-                        <img src="../images/hero/hero-nav-thinking.png" alt="" width="100" />
+                        <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-thinking.png`} alt="" width="100" />
                         <p>何してくれるの？</p>
                     </a>
                     <a href="#counselor" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('counselor'); }}>
-                        <img src="../images/hero/hero-nav-speaking.png" alt="" width="100" />
+                        <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-speaking.png`} alt="" width="100" />
                         <p>どんな人とお話しするの？</p>
                     </a>
                     <a href="#use-cases" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('use-cases'); }}>
-                        <img src="../images/hero/hero-nav-listening.png" alt="" width="100" />
+                        <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-listening.png`} alt="" width="100" />
                         <p>どんな人が対象なの？</p>
                     </a>
                     <a href="#access" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('access'); }}>
-                        <img src="../images/hero/hero-nav-helper.png" alt="" width="100" />
+                        <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-helper.png`} alt="" width="100" />
                         <p>どこにあるの？</p>
                     </a>
                 </div>
@@ -93,10 +94,10 @@ function HomePage() {
                                 </button>
                             )}
                         </p>
-                        <Button text="カウンセラーの想い" link="/counselor"></Button>
+                        <Link to="/counselor" style={{ textDecoration: 'none' }}><Button text="カウンセラーの想い" /></Link>
                     </div>
                     <div className="counselor-right">
-                        <img src="../images/person/wonyon.jpg" alt="今西三千代の写真" />
+                        <img src={`${process.env.PUBLIC_URL}/images/person/wonyon.jpg`} alt="今西三千代の写真" />
                     </div>
                 </div>
                 {/* <div className="support-member container column fade-in">

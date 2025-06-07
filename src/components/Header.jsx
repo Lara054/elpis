@@ -61,7 +61,7 @@ function Header() {
                       <li><Link to="/">ホーム</Link></li>
                       <li><Link to="/facility">施設紹介</Link></li>
                       <li><Link to="/counselor">カウンセラーの想い</Link></li>
-                      <li><Button text="ご相談はこちら" link="/contact" /></li>
+                      <li><Link to="/contact"><Button text="ご相談はこちら" /></Link></li>
                     </ul>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ function Header() {
                   <li><Link to="/counselor">カウンセラーの想い</Link></li>
                   <div>|</div>
                   <div>
-                    <Button text="ご相談はこちら" link="/contact"></Button>
+                    <Link to="/contact"><Button text="ご相談はこちら" /></Link>
                   </div>
                 </div>
                 {/* PC時はハンバーガーメニューを表示しない */}
