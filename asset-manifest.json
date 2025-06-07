@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/koinonia/static/css/main.2023748f.chunk.css",
+    "main.css": "/koinonia/static/css/main.603578b4.chunk.css",
     "main.js": "/koinonia/static/js/main.0f35284d.chunk.js",
     "main.js.map": "/koinonia/static/js/main.0f35284d.chunk.js.map",
     "runtime-main.js": "/koinonia/static/js/runtime-main.cbe2ae8e.js",
@@ -10,15 +10,15 @@
     "static/js/3.e7b39da5.chunk.js": "/koinonia/static/js/3.e7b39da5.chunk.js",
     "static/js/3.e7b39da5.chunk.js.map": "/koinonia/static/js/3.e7b39da5.chunk.js.map",
     "index.html": "/koinonia/index.html",
-    "precache-manifest.8bd443d64247da63ae4c3888a1ee3f52.js": "/koinonia/precache-manifest.8bd443d64247da63ae4c3888a1ee3f52.js",
+    "precache-manifest.3a5811ee79a9fe0c9a88ce7f641caee1.js": "/koinonia/precache-manifest.3a5811ee79a9fe0c9a88ce7f641caee1.js",
     "service-worker.js": "/koinonia/service-worker.js",
-    "static/css/main.2023748f.chunk.css.map": "/koinonia/static/css/main.2023748f.chunk.css.map",
+    "static/css/main.603578b4.chunk.css.map": "/koinonia/static/css/main.603578b4.chunk.css.map",
     "static/js/2.687287b3.chunk.js.LICENSE.txt": "/koinonia/static/js/2.687287b3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cbe2ae8e.js",
     "static/js/2.687287b3.chunk.js",
-    "static/css/main.2023748f.chunk.css",
+    "static/css/main.603578b4.chunk.css",
     "static/js/main.0f35284d.chunk.js"
   ]
 }
