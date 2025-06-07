@@ -7,10 +7,12 @@ import ContactPage from '../pages/ContactPage';
 import CounselorPage from '../pages/CounselorPage';
 import FacilityPage from '../pages/FacilityPage';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 function AppRoutes() {
     return (
         <HashRouter>
+            <ScrollToTop />
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
