@@ -7,7 +7,12 @@ import SymptomSection from '../components/SymptomSection';
 import '../css/pages/home.css';
 import '../css/common.css';
 
-
+function scrollToIdSmooth(id) {
+    const el = document.getElementById(id);
+    if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
 
 function HomePage() {
     // 追加: もっと見る用のstate
@@ -37,19 +42,19 @@ function HomePage() {
                     <h3>あなたが今、気になっていることはありますか？</h3>
                 </div>
                 <div className="fade-item hero-nav-items row">
-                    <a href="#about" className="hero-nav-item column offset">
+                    <a href="#about" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('about'); }}>
                         <img src="../images/hero/hero-nav-thinking.png" alt="" width="100" />
                         <p>何してくれるの？</p>
                     </a>
-                    <a href="#counselor" className="hero-nav-item column">
+                    <a href="#counselor" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('counselor'); }}>
                         <img src="../images/hero/hero-nav-speaking.png" alt="" width="100" />
                         <p>どんな人とお話しするの？</p>
                     </a>
-                    <a href="#use-cases" className="hero-nav-item column offset">
+                    <a href="#use-cases" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('use-cases'); }}>
                         <img src="../images/hero/hero-nav-listening.png" alt="" width="100" />
                         <p>どんな人が対象なの？</p>
                     </a>
-                    <a href="#access" className="hero-nav-item column">
+                    <a href="#access" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('access'); }}>
                         <img src="../images/hero/hero-nav-helper.png" alt="" width="100" />
                         <p>どこにあるの？</p>
                     </a>
