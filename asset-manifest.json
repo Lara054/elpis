@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/koinonia/static/css/main.2023748f.chunk.css",
-    "main.js": "/koinonia/static/js/main.baaf0e8e.chunk.js",
-    "main.js.map": "/koinonia/static/js/main.baaf0e8e.chunk.js.map",
+    "main.js": "/koinonia/static/js/main.977c81ae.chunk.js",
+    "main.js.map": "/koinonia/static/js/main.977c81ae.chunk.js.map",
     "runtime-main.js": "/koinonia/static/js/runtime-main.cbe2ae8e.js",
     "runtime-main.js.map": "/koinonia/static/js/runtime-main.cbe2ae8e.js.map",
     "static/js/2.3e972825.chunk.js": "/koinonia/static/js/2.3e972825.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e7b39da5.chunk.js": "/koinonia/static/js/3.e7b39da5.chunk.js",
     "static/js/3.e7b39da5.chunk.js.map": "/koinonia/static/js/3.e7b39da5.chunk.js.map",
     "index.html": "/koinonia/index.html",
-    "precache-manifest.ae4b8047957b05cea82179ad5a5d4456.js": "/koinonia/precache-manifest.ae4b8047957b05cea82179ad5a5d4456.js",
+    "precache-manifest.d4bbcd67a6bb78fddbcbae30831580bf.js": "/koinonia/precache-manifest.d4bbcd67a6bb78fddbcbae30831580bf.js",
     "service-worker.js": "/koinonia/service-worker.js",
     "static/css/main.2023748f.chunk.css.map": "/koinonia/static/css/main.2023748f.chunk.css.map",
     "static/js/2.3e972825.chunk.js.LICENSE.txt": "/koinonia/static/js/2.3e972825.chunk.js.LICENSE.txt"
@@ -19,6 +19,6 @@
     "static/js/runtime-main.cbe2ae8e.js",
     "static/js/2.3e972825.chunk.js",
     "static/css/main.2023748f.chunk.css",
-    "static/js/main.baaf0e8e.chunk.js"
+    "static/js/main.977c81ae.chunk.js"
   ]
 }
