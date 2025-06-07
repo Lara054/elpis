@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb984786691afdc1c206fe1dc4f785a7",
+    "revision": "d683e2ef48d460cbb0bdf901361cae72",
     "url": "/koinonia/index.html"
   },
   {
-    "revision": "9e1c68c416e2549ab066",
+    "revision": "c8a04bd1662f5c7bbc08",
     "url": "/koinonia/static/css/main.0c257518.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/koinonia/static/js/3.e7b39da5.chunk.js"
   },
   {
-    "revision": "9e1c68c416e2549ab066",
-    "url": "/koinonia/static/js/main.3c34612d.chunk.js"
+    "revision": "c8a04bd1662f5c7bbc08",
+    "url": "/koinonia/static/js/main.35da22fb.chunk.js"
   },
   {
     "revision": "55804a95922c8b2f5d64",
