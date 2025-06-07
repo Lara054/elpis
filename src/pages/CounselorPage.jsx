@@ -30,7 +30,7 @@ function Counselor() {
     return (
         <main>
             {/* <!-- ヒーロー --> */}
-            <Hero title=" カウンセラーの想い" subTitle=""></Hero>
+            <Hero title=" 代表の想い" subTitle=""></Hero>
             {/* <!-- ヒーローナビ --> */}
 
             <div className="counselor_content">

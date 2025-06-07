@@ -49,7 +49,7 @@ function HomePage() {
                     </a>
                     <a href="#counselor" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('counselor'); }}>
                         <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-speaking.png`} alt="" width="100" />
-                        <p>どんな人とお話しするの？</p>
+                        <p>代表の考え</p>
                     </a>
                     <a href="#use-cases" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('use-cases'); }}>
                         <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-listening.png`} alt="" width="100" />
@@ -84,7 +84,7 @@ function HomePage() {
             <section className="counselor" id="counselor">
                 <div className="counselor-main container row fade-in">
                     <div className="counselor-left ">
-                        <h2>カウンセラー紹介</h2>
+                        <h2>代表紹介</h2>
                         <p className="counselor-name">代表取締役　今西三千代</p>
                         <p>
                             {showCounselorFull || counselorText.length <= counselorLimit ? counselorText : counselorShort}
@@ -94,7 +94,7 @@ function HomePage() {
                                 </button>
                             )}
                         </p>
-                        <Link to="/counselor" style={{ textDecoration: 'none' }}><Button text="カウンセラーの想い" /></Link>
+                        <Link to="/counselor" style={{ textDecoration: 'none' }}><Button text="代表の想い" /></Link>
                     </div>
                     {/* 第二リリース　おばあちゃんの画像 */}
                     {/* <div className="counselor-right">
