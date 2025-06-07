@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Hero from '../components/Hero';
 import Button from '../components/Button';
 import Map from '../components/Map';
@@ -19,6 +19,13 @@ function HomePage() {
     // 追加: もっと見る用のstate
     const [showAboutFull, setShowAboutFull] = useState(false);
     const [showCounselorFull, setShowCounselorFull] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 600);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     // テキスト定義
     const aboutText = `エルピスは、統合失調症、双極性障害、うつ病など、精神的な病を抱えている方のための場所です。「治療を受けてきたけれど、改善が見られなかった」「病名はついているけれど、どう付き合っていいかわからない」そんな方が、少しずつ“自分らしさ”を取り戻していくために、カウンセラーと話しながら、一緒に整えていく場所です。
@@ -40,24 +47,24 @@ function HomePage() {
             {/* <!-- ヒーローナビ --> */}
             <section className="hero-nav">
                 <div className="hero-nav-title">
-                    <h3>あなたが今、気になっていることはありますか？</h3>
+                    <h3>{isMobile ? "気になる項目をタップしてください" : "何について知りたいですか？"}</h3>
                 </div>
                 <div className="fade-item hero-nav-items row">
                     <a href="#about" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('about'); }}>
                         <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-thinking.png`} alt="" width="100" />
-                        <p>何してくれるの？</p>
+                        <p>{isMobile ? "エルピスとは" : "何してくれるの？"}</p>
                     </a>
                     <a href="#counselor" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('counselor'); }}>
                         <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-speaking.png`} alt="" width="100" />
-                        <p>代表の考え</p>
+                        <p>{isMobile ? "代表の考え" : "代表の考え"}</p>
                     </a>
                     <a href="#use-cases" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('use-cases'); }}>
                         <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-listening.png`} alt="" width="100" />
-                        <p>どんな人が対象なの？</p>
+                        <p>{isMobile ? "対象症例" : "対象の症例は？"}</p>
                     </a>
                     <a href="#access" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('access'); }}>
                         <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-helper.png`} alt="" width="100" />
-                        <p>どこにあるの？</p>
+                        <p>{isMobile ? "アクセス" : "どこにあるの？"}</p>
                     </a>
                 </div>
             </section>

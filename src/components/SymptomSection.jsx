@@ -8,7 +8,7 @@ const symptoms = [
     },
     {
         title: '統合失調症',
-        description: '詳しくはお電話にてお問い合わせください'
+        description: '統合失調は、思考障害、思考の貧困、意欲の欠如、自閉などの症状が見られます。スタッフとの共同生活や対話の中で、改善点を見出していけると考えています。'
     },
     {
         title: '認知症',
@@ -36,10 +36,10 @@ const cases = [
 const SymptomSection = () => {
     return (
         <section className="symptom-section">
-            <h2 className="section-title">改善された症状の一例</h2>
+            <h2 className="section-title">対応可能な症例</h2>
             <p className="section-lead">
                 エルピスでは、病名や診断にとらわれず、「その人らしさ」を大切に支援しています。<br />
-                以下は、これまでに対応してきた症状と、支援によって変化が見られた実例です。
+                以下は、私たちが対応可能な症例になります。
             </p>
 
             <div className="symptom-list">
