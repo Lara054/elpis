@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import HomePage from '../pages/HomePage';
 import AboutPage from '../pages/AboutPage';
@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 function AppRoutes() {
     return (
-        <BrowserRouter basename="/koinonia">
+        <HashRouter>
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
@@ -22,7 +22,7 @@ function AppRoutes() {
             <footer>
                 <Footer />
             </footer>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
