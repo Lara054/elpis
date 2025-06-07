@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7c7602f577a049ce343373bd486d2b5",
+    "revision": "4a812cdce1c6285620e7874ec0759574",
     "url": "/koinonia/index.html"
   },
   {
-    "revision": "47c7ccb354727e791cd3",
+    "revision": "5195de67df8dfdf1f19c",
     "url": "/koinonia/static/css/main.2023748f.chunk.css"
   },
   {
-    "revision": "010402dfde5f99f099ac",
-    "url": "/koinonia/static/js/2.3e972825.chunk.js"
+    "revision": "55649dc8ab0ad39e8e84",
+    "url": "/koinonia/static/js/2.687287b3.chunk.js"
   },
   {
     "revision": "1aef9e0d481a6908c30509eb88500877",
-    "url": "/koinonia/static/js/2.3e972825.chunk.js.LICENSE.txt"
+    "url": "/koinonia/static/js/2.687287b3.chunk.js.LICENSE.txt"
   },
   {
     "revision": "d75801e565d895daffc5",
     "url": "/koinonia/static/js/3.e7b39da5.chunk.js"
   },
   {
-    "revision": "47c7ccb354727e791cd3",
-    "url": "/koinonia/static/js/main.977c81ae.chunk.js"
+    "revision": "5195de67df8dfdf1f19c",
+    "url": "/koinonia/static/js/main.0f35284d.chunk.js"
   },
   {
     "revision": "55804a95922c8b2f5d64",
