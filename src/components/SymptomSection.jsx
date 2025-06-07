@@ -50,8 +50,8 @@ const SymptomSection = () => {
                     </div>
                 ))}
             </div>
-
-            <div className="case-list">
+            {/* 第二リリース 症例 */}
+            {/* <div className="case-list">
                 {cases.map((c, idx) => (
                     <div key={idx} className="case-card">
                         <p className="case-condition">{c.condition}</p>
@@ -59,7 +59,7 @@ const SymptomSection = () => {
                         <p><strong>変化：</strong>{c.result}</p>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </section>
     );
 };

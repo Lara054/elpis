@@ -96,9 +96,11 @@ function HomePage() {
                         </p>
                         <Link to="/counselor" style={{ textDecoration: 'none' }}><Button text="カウンセラーの想い" /></Link>
                     </div>
-                    <div className="counselor-right">
+                    {/* 第二リリース　おばあちゃんの画像 */}
+                    {/* <div className="counselor-right">
                         <img src={`${process.env.PUBLIC_URL}/images/person/wonyon.jpg`} alt="今西三千代の写真" />
-                    </div>
+                    </div> */}
+
                 </div>
                 {/* <div className="support-member container column fade-in">
                     <h3>サポートメンバー</h3>
