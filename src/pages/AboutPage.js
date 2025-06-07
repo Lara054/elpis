@@ -57,7 +57,7 @@ function AboutPage() {
                             必要に応じて、住み込みでの支援や、定期的な通い、お話だけのサポートなど、
                             「その人にとって必要な支援のかたち」を共に見つけていきます。
                         </p>
-                        <img src="../images/person/sana.png" alt="" />
+                        <img src={`${process.env.PUBLIC_URL}/images/person/sana.png`} alt="" />
                     </div>
                 </div>
             </section>
@@ -68,10 +68,10 @@ function AboutPage() {
 
                     <h2>施設紹介</h2>
                     <div class="autoplay">
-                        <div><img src="../images/facility/f_image1.jpeg" alt="" /></div>
-                        <div><img src="../images/facility/f_image2.jpeg" alt="" /></div>
-                        <div><img src="../images/facility/f_image3.jpeg" alt="" /></div>
-                        <div><img src="../images/facility/f_image4.jpeg" alt="" /></div>
+                        <div><img src={`${process.env.PUBLIC_URL}/images/facility/f_image1.jpeg`} alt="" /></div>
+                        <div><img src={`${process.env.PUBLIC_URL}/images/facility/f_image2.jpeg`} alt="" /></div>
+                        <div><img src={`${process.env.PUBLIC_URL}/images/facility/f_image3.jpeg`} alt="" /></div>
+                        <div><img src={`${process.env.PUBLIC_URL}/images/facility/f_image4.jpeg`} alt="" /></div>
                     </div>
                 </div>
             </section>

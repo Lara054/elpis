@@ -42,7 +42,7 @@ const FacilityPage = () => {
                         <div className="photo-grid">
                             {photos.map((photo, index) => (
                                 <div key={index} className={`photo-card fade-in delay-${index + 1}`}>
-                                    <img src={photo.src} alt={photo.caption} />
+                                    <img src={`${process.env.PUBLIC_URL}${photo.src}`} alt={photo.caption} />
                                     <p className="photo-caption">{photo.caption}</p>
                                 </div>
                             ))}

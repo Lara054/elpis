@@ -67,7 +67,7 @@ function Header() {
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginLeft: '16px' }}>
                   <a href="tel:08052750753" className="tel">
-                    <img src="/images/header/tel.png" alt="電話番号" />
+                    <img src={`${process.env.PUBLIC_URL}/images/header/tel.png`} alt="電話番号" />
                   </a>
                   <span style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#375900', marginTop: '2px' }}>エルピス</span>
                 </div>
@@ -77,12 +77,12 @@ function Header() {
             <>
               <li className="nav-left">
                 <Link to="/">
-                  <img src="/images/header/logo.png" alt="エルピスのロゴ" />
+                  <img src={`${process.env.PUBLIC_URL}/images/header/logo.png`} alt="エルピスのロゴ" />
                 </Link>
               </li>
               <div className='nav-right column'>
                 <a href="tel:08052750753" className="tel">
-                  <img src="/images/header/tel.png" alt="電話番号" />
+                  <img src={`${process.env.PUBLIC_URL}/images/header/tel.png`} alt="電話番号" />
                 </a>
                 <div className="row pc-menu">
                   <li><Link to="/">ホーム</Link></li>
