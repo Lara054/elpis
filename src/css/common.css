@@ -1,5 +1,5 @@
 section {
-    padding: 150px 10%;
+    padding: 10% 20%;
 }
 
 :root {
@@ -102,7 +102,7 @@ a:focus {
 
 @media (max-width: 600px) {
     section {
-        padding: 20px 20px;
+        padding: 10% 10%;
     }
 
     .information {

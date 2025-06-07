@@ -25,7 +25,7 @@ const FacilityPage = () => {
         <main>
 
             <Hero title="施設紹介" />
-            <section className="section">
+            <section className="facility">
 
                 {underConstruction ? (
                     <div className="construction-banner">
