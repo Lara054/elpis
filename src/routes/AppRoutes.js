@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 function AppRoutes() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/koinonia">
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
