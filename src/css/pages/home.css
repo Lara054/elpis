@@ -95,7 +95,7 @@
 .about {
     align-items: center;
     text-align: center;
-    background-image: url("/koinonia/images/home/home-about-background-image.png");
+    background-image: url("/elpis/images/home/home-about-background-image.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@
 /* どんな人が話を聞いてくれるの？ */
 
 .use-cases {
-    background-image: url("/koinonia/images/home/home-use-case-background-image.png");
+    background-image: url("/elpis/images/home/home-use-case-background-image.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
