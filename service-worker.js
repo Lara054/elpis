@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/koinonia/precache-manifest.55f73cd4b91d86788942103723e63688.js"
+  "/koinonia/precache-manifest.98474384925e1643a0a2ce31222dc2ac.js"
 );
 
 self.addEventListener('message', (event) => {
