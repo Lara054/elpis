@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/koinonia/static/css/main.da4303ad.chunk.css",
-    "main.js": "/koinonia/static/js/main.9626bf43.chunk.js",
-    "main.js.map": "/koinonia/static/js/main.9626bf43.chunk.js.map",
-    "runtime-main.js": "/koinonia/static/js/runtime-main.cbe2ae8e.js",
-    "runtime-main.js.map": "/koinonia/static/js/runtime-main.cbe2ae8e.js.map",
-    "static/js/2.687287b3.chunk.js": "/koinonia/static/js/2.687287b3.chunk.js",
-    "static/js/2.687287b3.chunk.js.map": "/koinonia/static/js/2.687287b3.chunk.js.map",
-    "static/js/3.e7b39da5.chunk.js": "/koinonia/static/js/3.e7b39da5.chunk.js",
-    "static/js/3.e7b39da5.chunk.js.map": "/koinonia/static/js/3.e7b39da5.chunk.js.map",
-    "index.html": "/koinonia/index.html",
-    "precache-manifest.98474384925e1643a0a2ce31222dc2ac.js": "/koinonia/precache-manifest.98474384925e1643a0a2ce31222dc2ac.js",
-    "service-worker.js": "/koinonia/service-worker.js",
-    "static/css/main.da4303ad.chunk.css.map": "/koinonia/static/css/main.da4303ad.chunk.css.map",
-    "static/js/2.687287b3.chunk.js.LICENSE.txt": "/koinonia/static/js/2.687287b3.chunk.js.LICENSE.txt"
+    "main.css": "/elpis/static/css/main.20e5853a.chunk.css",
+    "main.js": "/elpis/static/js/main.c034a51f.chunk.js",
+    "main.js.map": "/elpis/static/js/main.c034a51f.chunk.js.map",
+    "runtime-main.js": "/elpis/static/js/runtime-main.39aa8195.js",
+    "runtime-main.js.map": "/elpis/static/js/runtime-main.39aa8195.js.map",
+    "static/js/2.687287b3.chunk.js": "/elpis/static/js/2.687287b3.chunk.js",
+    "static/js/2.687287b3.chunk.js.map": "/elpis/static/js/2.687287b3.chunk.js.map",
+    "static/js/3.e7b39da5.chunk.js": "/elpis/static/js/3.e7b39da5.chunk.js",
+    "static/js/3.e7b39da5.chunk.js.map": "/elpis/static/js/3.e7b39da5.chunk.js.map",
+    "index.html": "/elpis/index.html",
+    "precache-manifest.d19fb42fb39398680d81587b6b020fe8.js": "/elpis/precache-manifest.d19fb42fb39398680d81587b6b020fe8.js",
+    "service-worker.js": "/elpis/service-worker.js",
+    "static/css/main.20e5853a.chunk.css.map": "/elpis/static/css/main.20e5853a.chunk.css.map",
+    "static/js/2.687287b3.chunk.js.LICENSE.txt": "/elpis/static/js/2.687287b3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cbe2ae8e.js",
+    "static/js/runtime-main.39aa8195.js",
     "static/js/2.687287b3.chunk.js",
-    "static/css/main.da4303ad.chunk.css",
-    "static/js/main.9626bf43.chunk.js"
+    "static/css/main.20e5853a.chunk.css",
+    "static/js/main.c034a51f.chunk.js"
   ]
 }
