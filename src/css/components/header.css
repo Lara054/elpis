@@ -80,13 +80,16 @@ ul {
 
 
 
-/* header {
-    background-image: url("/images/header/header-background-image.png");
-    background-size: cover;
-    background-position: bottom;
-
-    background-repeat: no-repeat;
-} */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: background 0.5s;
+}
 
 .pc-menu {
     display: flex;
@@ -172,4 +175,8 @@ ul {
         max-width: 200px;
         height: auto;
     }
+}
+
+body {
+    padding-top: 100px;
 }
