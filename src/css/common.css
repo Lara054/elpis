@@ -128,3 +128,7 @@ a:focus {
         font-size: unset;
     }
 }
+
+.white-nowrap {
+    white-space: nowrap;
+}

@@ -58,9 +58,6 @@ ul {
         gap: 10px;
     }
 
-    .nav-left img {
-        max-width: 150px;
-    }
 
 }
 
@@ -160,6 +157,7 @@ ul {
 
 /* スマホサイズでのスタイル */
 @media (max-width: 701px) {
+
     .pc-menu {
         display: none;
     }
@@ -167,5 +165,11 @@ ul {
     .hamburger-menu {
         display: flex;
         align-items: center;
+    }
+
+    .tel img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
     }
 }

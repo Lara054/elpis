@@ -46,42 +46,31 @@ function Header() {
   }, []);
 
   return (
-    <header style={{ position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 1000, background: 'rgba(255,255,255,0.75)', boxShadow: '0 2px 8px rgba(0,0,0,0.04)', transition: 'background 0.5s' }}>
+    <header>
       <nav>
         <ul className='nav'>
           {isMobile ? (
             <>
               <div className="nav-right column" style={{ flexDirection: 'row', alignItems: 'center', flex: 1, width: '100%', justifyContent: 'space-between' }}>
-                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '10px' }}>
-                  <div className="hamburger-menu">
-                    <button onClick={toggleMenu} className="hamburger-button">
-                      ☰
-                    </button>
-                    <div className={`menu-dropdown${menuOpen ? ' open' : ''}`}>
-                      <ul>
-                        <li><Link to="/">ホーム</Link></li>
-                        <li><Link to="/facility">施設紹介</Link></li>
-                        <li><Link to="/counselor">代表の想い</Link></li>
-                        <li><Link to="/contact"><Button text="ご相談はこちら" /></Link></li>
-                      </ul>
-                    </div>
+                <div className="hamburger-menu">
+                  <button onClick={toggleMenu} className="hamburger-button">
+                    ☰
+                  </button>
+                  <div className={`menu-dropdown${menuOpen ? ' open' : ''}`}>
+                    <ul>
+                      <li><Link to="/">ホーム</Link></li>
+                      <li><Link to="/facility">施設紹介</Link></li>
+                      <li><Link to="/counselor">カウンセラーの想い</Link></li>
+                      <li><Button text="ご相談はこちら" link="/contact" /></li>
+                    </ul>
                   </div>
-                  <span
-                    style={{
-                      fontWeight: 'bold',
-                      fontSize: '1.5rem',
-                      color: '#375900',
-                      marginTop: '2px',
-                      whiteSpace: 'nowrap',
-                      transition: 'font-size 0.2s'
-                    }}
-                  >
-                    エルピス
-                  </span>
                 </div>
-                <a href="tel:08052750753" className="tel">
-                  <img src={`${process.env.PUBLIC_URL}/images/header/tel.png`} alt="電話番号" />
-                </a>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginLeft: '16px' }}>
+                  <a href="tel:08052750753" className="tel">
+                    <img src={`${process.env.PUBLIC_URL}/images/header/tel.png`} alt="電話番号" />
+                  </a>
+                  <span style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#375900', marginTop: '2px', }}>エルピス</span>
+                </div>
               </div>
             </>
           ) : (
@@ -100,10 +89,10 @@ function Header() {
                   <div>|</div>
                   <li><Link to="/facility">施設紹介</Link></li>
                   <div>|</div>
-                  <li><Link to="/counselor">代表の想い</Link></li>
+                  <li><Link to="/counselor">カウンセラーの想い</Link></li>
                   <div>|</div>
                   <div>
-                    <Link to="/contact"><Button text="ご相談はこちら" /></Link>
+                    <Button text="ご相談はこちら" link="/contact"></Button>
                   </div>
                 </div>
                 {/* PC時はハンバーガーメニューを表示しない */}
