@@ -66,7 +66,7 @@ function Header() {
                       </ul>
                     </div>
                   </div>
-                  <span style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#375900', marginLeft: '8px' }}>エルピス</span>
+                  <span style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#375900', marginLeft: '8px', whiteSpace: 'nowrap' }}>エルピス</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', marginLeft: 'auto' }}>
                   <a href="tel:08052750753" className="tel">
