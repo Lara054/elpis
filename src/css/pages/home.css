@@ -239,6 +239,26 @@
     gap: 50px;
 }
 
+.more-btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 24px;
+    background: none;
+    color: #375900;
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s, text-decoration 0.2s;
+    text-decoration: underline;
+}
+
+.more-btn:hover {
+    color: #254000;
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .counselor-right img {
         max-width: 50%;

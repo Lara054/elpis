@@ -158,6 +158,10 @@ header {
     color: #000;
 }
 
+.menu-link a {
+    margin-left: 20px;
+}
+
 /* スマホサイズでのスタイル */
 @media (max-width: 701px) {
 

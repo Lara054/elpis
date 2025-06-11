@@ -59,19 +59,19 @@ function Header() {
                     </button>
                     <div className={`menu-dropdown${menuOpen ? ' open' : ''}`}>
                       <ul>
-                        <li><Link to="/">ホーム</Link></li>
-                        <li><Link to="/facility">施設紹介</Link></li>
-                        <li><Link to="/counselor">カウンセラーの想い</Link></li>
+                        <li>
+                          <a href="tel:08052750753" className="tel">
+                            <img src={`${process.env.PUBLIC_URL}/images/header/tel.png`} alt="電話番号" />
+                          </a>
+                        </li>
+                        <li className="menu-link"><Link to="/">ホーム</Link></li>
+                        <li className="menu-link"><Link to="/facility">施設紹介</Link></li>
+                        <li className="menu-link"><Link to="/counselor">カウンセラーの想い</Link></li>
                         <li><Button text="ご相談はこちら" link="/contact" /></li>
                       </ul>
                     </div>
                   </div>
                   <span style={{ fontWeight: 'bold', fontSize: '1.5rem', color: '#375900', marginLeft: '8px', whiteSpace: 'nowrap' }}>エルピス</span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', marginLeft: 'auto' }}>
-                  <a href="tel:08052750753" className="tel">
-                    <img src={`${process.env.PUBLIC_URL}/images/header/tel.png`} alt="電話番号" />
-                  </a>
                 </div>
               </div>
             </>

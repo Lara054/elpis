@@ -19,6 +19,7 @@ function HomePage() {
     // 追加: もっと見る用のstate
     const [showAboutFull, setShowAboutFull] = useState(false);
     const [showCounselorFull, setShowCounselorFull] = useState(false);
+    const [showConcreteFull, setShowConcreteFull] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
 
     useEffect(() => {
@@ -32,12 +33,39 @@ function HomePage() {
 医療機関では「改善が難しい」と言われた症状でも、 実際にここで落ち着きを取り戻した方が何人もいます。
 お薬や診断だけではたどり着けなかった回復の形を、 私たちは “人と人との関わり” の中で探していきます。`;
     const counselorText = `平成４年９月１日より５０歳になるまで何人もの方々の助けを得て今生かされているかと思う度、何のお返しもしていない私はその方々にお返しするのは申し訳ないので、貧しい人や病んでいる人々の助け手になるべく精神の身体の重荷を少しでも平安になれる心と体を鍛えて、また子供たちや心の交じう方々の助けによってこの施設をおよそ２８年間ものあいだ続けられてきたようにどこまでいっても誰かに助けられています。「お互いに助けあう」施設です。老人スタッフ３人（７０歳以上）若者５人の心を一つにした者によって成り立っている所です。牡蠣の殻なる牡蠣の身のかくも涯てなき海にして　生きのいのちの味気なき　その思いこそかなしけれ　と歌っています。その生命に喜びと感謝を感じられる施設だと思います。`;
+    const concreteText = `82年間の人生の中で、昭和43年から6人の障害児を産み育てていく人生が与えられました。
+4男2女、それぞれ重度の障害でしたが、特に三男は脳性麻痺と診断され、東京女子医大の福山先生からは「将来の約束は何もない」と告げられました。
+
+写真は当時3歳、一家で撮ったものです。首も手も足も完全に麻痺し、一日に600回の引きつけ（痙攣）を起こすという診断結果でした。
+
+そこから、私の戦いが始まりました。世界で一番の名医と言われる先生から、学びが始まったのです。
+
+なぜ脳性麻痺の子が私に与えられたのか。その答えは199号に記されています。
+私の質問に対して、先生は「夫の父が戦死し、残された姑に仕える仕事が答え」と教えてくださいました。
+
+そのことが心から理解できた時、私はある決心をしました。なんの薬も使っていなかったのに、その決心一つで600回の発作が止まったのです。
+
+もしあの時、薬漬けになっていたら、この現象は起こらなかったかもしれません。
+
+原因がどこにあるかが分かり、そこで本当の決断をすれば、人は治されるということを、私は体験しました。
+
+地に向かう手が前に動き出し、物を取ることができたのです。
+それからはまるで聖書にある「コネクト、コネクト」のように、足が、頭が、口が、耳が、動き始めました。
+
+物が言えるようになるまでに1年かかり、彼は4歳で完全な自由を得ました。
+
+食べることができなかったので口移しで与えていましたが、それも必要なくなりました。
+18歳の時には、彼が働ける場所を千葉に作り、33年間、私の片腕として、朝5時から夕方5時まで、休むことなく老人介護施設で働いています。
+
+3階からお年寄りを抱えて降ろすなど、まさに人の役に立つ存在になってくれました。`;
 
     // 文字数制御
     const aboutLimit = window.innerWidth > 900 ? 400 : 100;
     const counselorLimit = window.innerWidth > 900 ? 400 : 100;
+    const concreteLimit = 300;
     const aboutShort = aboutText.length > aboutLimit ? aboutText.slice(0, aboutLimit) + '…' : aboutText;
     const counselorShort = counselorText.length > counselorLimit ? counselorText.slice(0, counselorLimit) + '…' : counselorText;
+    const concreteShort = concreteText.length > concreteLimit ? concreteText.slice(0, concreteLimit) + '…' : concreteText;
 
     return (
         <main>
@@ -76,7 +104,7 @@ function HomePage() {
                     <p>
                         {showAboutFull || aboutText.length <= aboutLimit ? aboutText : aboutShort}
                         {aboutText.length > aboutLimit && (
-                            <button className="counselor-more-btn" style={{ marginLeft: '8px' }} onClick={() => setShowAboutFull(v => !v)}>
+                            <button className="more-btn" onClick={() => setShowAboutFull(v => !v)}>
                                 {showAboutFull ? '閉じる' : 'もっと見る'}
                             </button>
                         )}
@@ -96,7 +124,7 @@ function HomePage() {
                         <p>
                             {showCounselorFull || counselorText.length <= counselorLimit ? counselorText : counselorShort}
                             {counselorText.length > counselorLimit && (
-                                <button className="counselor-more-btn" style={{ marginLeft: '8px' }} onClick={() => setShowCounselorFull(v => !v)}>
+                                <button className="more-btn" onClick={() => setShowCounselorFull(v => !v)}>
                                     {showCounselorFull ? '閉じる' : 'もっと見る'}
                                 </button>
                             )}
@@ -155,6 +183,24 @@ function HomePage() {
             <div id="use-cases">
                 <SymptomSection />
             </div>
+
+            {/* 具体的な症例セクション */}
+            <section className="concrete-cases fade-in" id="concrete-cases">
+                <div className="column concrete-cases">
+                    <h2>具体的な症例</h2>
+                    <h3 className="concrete-cases__subtitle">三男：脳性麻痺・発作1日600回からの回復</h3>
+                    <div className="concrete-cases-content">
+                        <p>
+                            {showConcreteFull || concreteText.length <= concreteLimit ? concreteText : concreteShort}
+                            {concreteText.length > concreteLimit && (
+                                <button className="more-btn" onClick={() => setShowConcreteFull(v => !v)}>
+                                    {showConcreteFull ? '閉じる' : 'もっと見る'}
+                                </button>
+                            )}
+                        </p>
+                    </div>
+                </div>
+            </section>
 
             <section className="access fade-in" id="access">
                 <div className="column access">
