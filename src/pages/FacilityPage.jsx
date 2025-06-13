@@ -6,20 +6,15 @@ const photos = [
     { src: '/images/facility/bathroom.png', caption: '浴室' },
     { src: '/images/facility/changingroom.png', caption: '脱衣所' },
     { src: '/images/facility/corridor.png', caption: '廊下' },
-    { src: '/images/facility/corridor2.png', caption: '廊下（別角度）' },
-    { src: '/images/facility/kitchen.png', caption: 'キッチン' },
-    { src: '/images/facility/kitchen2.png', caption: 'キッチン（別角度）' },
-    { src: '/images/facility/kitchen3.png', caption: 'キッチン（調理中）' },
+    { src: '/images/facility/kitchen2.png', caption: 'キッチン' },
     { src: '/images/facility/room.png', caption: '個室' },
-    { src: '/images/facility/room2.png', caption: '個室（別部屋）' },
     { src: '/images/facility/sink.png', caption: '洗面台' },
-    { src: '/images/facility/sink2.png', caption: '洗面台（別角度）' },
     { src: '/images/facility/toilet.png', caption: 'トイレ' },
 ];
 
 const FacilityPage = () => {
     // 施設が建設中かどうかのフラグ
-    const underConstruction = true;
+    const underConstruction = false;
 
     return (
         <main>
@@ -36,7 +31,6 @@ const FacilityPage = () => {
                     <>
                         <p className="facility-description">
                             エルピスでは、ご本人が安心して過ごせるような環境づくりを大切にしています。<br />
-                            ここでは、施設の雰囲気や暮らしの様子をご紹介します。
                         </p>
 
                         <div className="photo-grid">
