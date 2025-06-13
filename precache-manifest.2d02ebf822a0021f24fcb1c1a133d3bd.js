@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "af6305866d37605a61f42a0885da017b",
+    "revision": "b694af2cf50e8fbdde57fc5e5c113ffd",
     "url": "/elpis/index.html"
   },
   {
-    "revision": "e3238e6d89277064310b",
+    "revision": "260f7dd279a379c74d08",
     "url": "/elpis/static/css/main.4d693cfe.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/elpis/static/js/3.e7b39da5.chunk.js"
   },
   {
-    "revision": "e3238e6d89277064310b",
-    "url": "/elpis/static/js/main.2bb305fd.chunk.js"
+    "revision": "260f7dd279a379c74d08",
+    "url": "/elpis/static/js/main.1b096ba3.chunk.js"
   },
   {
     "revision": "f42afe620d40459d272b",

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/elpis/static/css/main.4d693cfe.chunk.css",
-    "main.js": "/elpis/static/js/main.2bb305fd.chunk.js",
-    "main.js.map": "/elpis/static/js/main.2bb305fd.chunk.js.map",
+    "main.js": "/elpis/static/js/main.1b096ba3.chunk.js",
+    "main.js.map": "/elpis/static/js/main.1b096ba3.chunk.js.map",
     "runtime-main.js": "/elpis/static/js/runtime-main.39aa8195.js",
     "runtime-main.js.map": "/elpis/static/js/runtime-main.39aa8195.js.map",
     "static/js/2.687287b3.chunk.js": "/elpis/static/js/2.687287b3.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e7b39da5.chunk.js": "/elpis/static/js/3.e7b39da5.chunk.js",
     "static/js/3.e7b39da5.chunk.js.map": "/elpis/static/js/3.e7b39da5.chunk.js.map",
     "index.html": "/elpis/index.html",
-    "precache-manifest.e84d69820e9d8f6c8526684634ce765e.js": "/elpis/precache-manifest.e84d69820e9d8f6c8526684634ce765e.js",
+    "precache-manifest.2d02ebf822a0021f24fcb1c1a133d3bd.js": "/elpis/precache-manifest.2d02ebf822a0021f24fcb1c1a133d3bd.js",
     "service-worker.js": "/elpis/service-worker.js",
     "static/css/main.4d693cfe.chunk.css.map": "/elpis/static/css/main.4d693cfe.chunk.css.map",
     "static/js/2.687287b3.chunk.js.LICENSE.txt": "/elpis/static/js/2.687287b3.chunk.js.LICENSE.txt"
@@ -19,6 +19,6 @@
     "static/js/runtime-main.39aa8195.js",
     "static/js/2.687287b3.chunk.js",
     "static/css/main.4d693cfe.chunk.css",
-    "static/js/main.2bb305fd.chunk.js"
+    "static/js/main.1b096ba3.chunk.js"
   ]
 }
