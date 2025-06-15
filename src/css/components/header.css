@@ -61,25 +61,6 @@ ul {
 
 }
 
-/* 
-.contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.tel {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-} */
-
-
-
-
-
-
 header {
     position: fixed;
     top: 0;
@@ -179,8 +160,8 @@ header {
         max-width: 200px;
         height: auto;
     }
-}
 
-body {
-    padding-top: 100px;
+    /* body {
+        padding-top: 100px;
+    } */
 }

@@ -67,7 +67,7 @@ function Header() {
                         <li className="menu-link"><Link to="/">ホーム</Link></li>
                         <li className="menu-link"><Link to="/facility">施設紹介</Link></li>
                         <li className="menu-link"><Link to="/counselor">カウンセラーの想い</Link></li>
-                        <li><Button text="ご相談はこちら" link="/contact" /></li>
+                        <li><Link to="/contact"><Button text="ご相談はこちら" /></Link></li>
                       </ul>
                     </div>
                   </div>
