@@ -30,7 +30,7 @@ function Counselor() {
     return (
         <main>
             {/* <!-- ヒーロー --> */}
-            <Hero title=" 代表の想い" subTitle=""></Hero>
+            <Hero title=" 代表の想い" subTitle="" backgroundImage={"/images/hero/background-image/counselor-background-image.jpg"}></Hero>
             {/* <!-- ヒーローナビ --> */}
 
             <div className="counselor_content">

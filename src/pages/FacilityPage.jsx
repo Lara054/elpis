@@ -18,7 +18,7 @@ const FacilityPage = () => {
 
     return (
         <main>
-            <Hero title="施設紹介" />
+            <Hero title="施設紹介" backgroundImage={"/images/hero/background-image/contact-background-image.jpg"} />
             <section className="facility">
                 {underConstruction ? (
                     <div className="construction-banner">

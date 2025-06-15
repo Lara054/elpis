@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/components/symptom_section.css';
+import FlowerDecoration from "../components/FlowerDecoration";
 
 const symptoms = [
     {
@@ -36,6 +37,7 @@ const cases = [
 const SymptomSection = () => {
     return (
         <section className="symptom-section">
+            <FlowerDecoration src="flower4.png" position="top-center" />
             <h2 className="section-title">対応可能な症例</h2>
             <p className="section-lead">
                 エルピスでは、病名や診断にとらわれず、「その人らしさ」を大切に支援しています。<br />

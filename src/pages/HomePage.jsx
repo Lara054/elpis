@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import Map from '../components/Map';
 import SymptomSection from '../components/SymptomSection';
 import { Link } from 'react-router-dom';
+import FlowerDecoration from "../components/FlowerDecoration";
 
 import '../css/pages/home.css';
 import '../css/common.css';
@@ -71,10 +72,11 @@ function HomePage() {
         <main>
 
             {/* <!-- ヒーロー --> */}
-            <Hero title="エルピスへようこそ" subTitle=""></Hero>
+            <Hero title="エルピスへようこそ" subTitle="" backgroundImage="/images/hero/background-image/hero-background-image.jpg"></Hero>
             {/* <!-- ヒーローナビ --> */}
             <section className="hero-nav">
                 <div className="hero-nav-title">
+                    <FlowerDecoration src="flower4.png" />
                     <h3>{isMobile ? "気になる項目をタップしてください" : "何について知りたいですか？"}</h3>
                 </div>
                 <div className="fade-item hero-nav-items row">
@@ -99,6 +101,7 @@ function HomePage() {
 
             {/* <!-- エルピスって何 --> */}
             <section className="about column" id="about">
+                <FlowerDecoration src="flower5.png" />
                 <h2>エルピスとは？</h2>
                 <div className="about-content-right">
                     <p>
@@ -117,8 +120,10 @@ function HomePage() {
 
             {/* <!-- どんな人が話を聞いてくれるの？ --> */}
             <section className="counselor" id="counselor">
+
                 <div className="counselor-main container row fade-in">
                     <div className="counselor-left ">
+                        <FlowerDecoration src="flower6.png" />
                         <h2>代表紹介</h2>
                         <p className="counselor-name">代表取締役　今西三千代</p>
                         <p>
@@ -186,6 +191,11 @@ function HomePage() {
 
             {/* 具体的な症例セクション */}
             <section className="concrete-cases fade-in" id="concrete-cases">
+
+                <FlowerDecoration src="flower7.png" />
+
+
+
                 <div className="column concrete-cases">
                     <h2>具体的な症例</h2>
                     <h3 className="concrete-cases__subtitle">三男：脳性麻痺・発作1日600回からの回復</h3>
@@ -204,6 +214,7 @@ function HomePage() {
 
             <section className="access fade-in" id="access">
                 <div className="column access">
+                    <FlowerDecoration src="flower4.png" />
                     <h2>アクセス</h2>
 
                     <Map />

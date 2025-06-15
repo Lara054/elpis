@@ -7,7 +7,7 @@ function ContactPage() {
     return (
         <main>
 
-            <Hero title={"お問い合わせ"} />
+            <Hero title={"お問い合わせ"} backgroundImage={"/images/hero/background-image/contact-background-image.jpg"} />
             <div style={styles.container}>
 
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '10vh', width: '100%' }}>
