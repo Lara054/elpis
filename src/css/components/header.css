@@ -67,9 +67,15 @@ header {
     left: 0;
     width: 100vw;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.753);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     transition: background 0.5s;
+}
+
+header.scrolled {
+    background: rgba(255, 255, 255, 0.253);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s, box-shadow 0.5s;
 }
 
 .pc-menu {

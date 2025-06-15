@@ -9,6 +9,7 @@ import '../css/components/header.css';
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 701);
+  const [scrolled, setScrolled] = useState(false); // 追加
 
   const toggleMenu = (event) => {
     event.stopPropagation(); // イベントの伝播を防ぐ
@@ -45,8 +46,17 @@ function Header() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // スクロール監視
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 200);
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <header>
+    <header className={scrolled ? 'scrolled' : ''}>
       <nav>
         <ul className='nav'>
           {isMobile ? (
