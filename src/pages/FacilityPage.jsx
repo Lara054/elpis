@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/pages/facility.css';
 import Hero from '../components/Hero';
 
@@ -16,27 +16,52 @@ const FacilityPage = () => {
     // 施設が建設中かどうかのフラグ
     const underConstruction = false;
 
+    // 画像のロード状態管理
+    const [loading, setLoading] = useState(true);
+    const [loadedCount, setLoadedCount] = useState(0);
+    const totalImages = photos.length;
+
+    useEffect(() => {
+        if (loadedCount >= totalImages) {
+            setLoading(false);
+        }
+    }, [loadedCount, totalImages]);
+
+    const handleImageLoad = () => {
+        setLoadedCount((prev) => prev + 1);
+    };
+    const handleImageError = () => {
+        setLoadedCount((prev) => prev + 1);
+    };
+
     return (
         <main>
-
             <Hero title="施設紹介" />
             <section className="facility">
-
                 {underConstruction ? (
                     <div className="construction-banner">
                         <p>現在、施設は建設中です。</p>
                         <p>完成次第、写真や詳細をご紹介いたしますので、今しばらくお待ちください。</p>
+                    </div>
+                ) : loading ? (
+                    <div className="loading-indicator">
+                        <div className="loading-spinner" />
+                        <div>画像を読み込み中です...</div>
                     </div>
                 ) : (
                     <>
                         <p className="facility-description">
                             エルピスでは、ご本人が安心して過ごせるような環境づくりを大切にしています。<br />
                         </p>
-
                         <div className="photo-grid">
                             {photos.map((photo, index) => (
                                 <div key={index} className={`photo-card fade-in delay-${index + 1}`}>
-                                    <img src={`${process.env.PUBLIC_URL}${photo.src}`} alt={photo.caption} />
+                                    <img
+                                        src={`${process.env.PUBLIC_URL}${photo.src}`}
+                                        alt={photo.caption}
+                                        onLoad={handleImageLoad}
+                                        onError={handleImageError}
+                                    />
                                     <p className="photo-caption">{photo.caption}</p>
                                 </div>
                             ))}
