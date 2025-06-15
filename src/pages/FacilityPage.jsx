@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../css/pages/facility.css';
 import Hero from '../components/Hero';
 
@@ -6,33 +6,15 @@ const photos = [
     { src: '/images/facility/bathroom.png', caption: '浴室' },
     { src: '/images/facility/changingroom.png', caption: '脱衣所' },
     { src: '/images/facility/corridor.png', caption: '廊下' },
-    { src: '/images/facility/kitchen2.png', caption: 'キッチン' },
+    { src: '/images/facility/kitchen.png', caption: 'キッチン' },
     { src: '/images/facility/room.png', caption: '個室' },
-    { src: '/images/facility/sink.png', caption: '洗面台' },
+    { src: '/images/facility/sink2.png', caption: '洗面台' },
     { src: '/images/facility/toilet.png', caption: 'トイレ' },
 ];
 
 const FacilityPage = () => {
     // 施設が建設中かどうかのフラグ
     const underConstruction = false;
-
-    // 画像のロード状態管理
-    const [loading, setLoading] = useState(true);
-    const [loadedCount, setLoadedCount] = useState(0);
-    const totalImages = photos.length;
-
-    useEffect(() => {
-        if (loadedCount >= totalImages) {
-            setLoading(false);
-        }
-    }, [loadedCount, totalImages]);
-
-    const handleImageLoad = () => {
-        setLoadedCount((prev) => prev + 1);
-    };
-    const handleImageError = () => {
-        setLoadedCount((prev) => prev + 1);
-    };
 
     return (
         <main>
@@ -42,11 +24,6 @@ const FacilityPage = () => {
                     <div className="construction-banner">
                         <p>現在、施設は建設中です。</p>
                         <p>完成次第、写真や詳細をご紹介いたしますので、今しばらくお待ちください。</p>
-                    </div>
-                ) : loading ? (
-                    <div className="loading-indicator">
-                        <div className="loading-spinner" />
-                        <div>画像を読み込み中です...</div>
                     </div>
                 ) : (
                     <>
@@ -59,8 +36,6 @@ const FacilityPage = () => {
                                     <img
                                         src={`${process.env.PUBLIC_URL}${photo.src}`}
                                         alt={photo.caption}
-                                        onLoad={handleImageLoad}
-                                        onError={handleImageError}
                                     />
                                     <p className="photo-caption">{photo.caption}</p>
                                 </div>
