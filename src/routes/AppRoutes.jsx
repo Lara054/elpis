@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import HomePage from '../pages/HomePage';
 import AboutPage from '../pages/AboutPage';
@@ -11,7 +11,7 @@ import ScrollToTop from '../components/ScrollToTop';
 
 function AppRoutes() {
     return (
-        <HashRouter>
+        <BrowserRouter>
             <ScrollToTop />
             <Header />
             <Routes>
@@ -24,7 +24,7 @@ function AppRoutes() {
             <footer>
                 <Footer />
             </footer>
-        </HashRouter>
+        </BrowserRouter>
     );
 }
 
