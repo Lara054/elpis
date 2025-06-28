@@ -11,7 +11,7 @@ import ScrollToTop from '../components/ScrollToTop';
 
 function AppRoutes() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/elpis">
             <ScrollToTop />
             <Header />
             <Routes>
