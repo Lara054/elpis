@@ -4,12 +4,15 @@
     <loc>https://lara054.github.io/elpis/</loc>
   </url>
   <url>
-    <loc>https://lara054.github.io/elpis/#/facility</loc>
+    <loc>https://lara054.github.io/elpis/about</loc>
   </url>
   <url>
-    <loc>https://lara054.github.io/elpis/#/counselor</loc>
+    <loc>https://lara054.github.io/elpis/contact</loc>
   </url>
   <url>
-    <loc>https://lara054.github.io/elpis/#/contact</loc>
+    <loc>https://lara054.github.io/elpis/counselor</loc>
+  </url>
+  <url>
+    <loc>https://lara054.github.io/elpis/facility</loc>
   </url>
 </urlset>
