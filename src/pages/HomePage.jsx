@@ -5,6 +5,8 @@ import Map from '../components/Map';
 import SymptomSection from '../components/SymptomSection';
 import { Link } from 'react-router-dom';
 import FlowerDecoration from "../components/FlowerDecoration";
+import { Helmet } from "react-helmet";
+
 
 import '../css/pages/home.css';
 import '../css/common.css';
@@ -69,80 +71,88 @@ function HomePage() {
     const concreteShort = concreteText.length > concreteLimit ? concreteText.slice(0, concreteLimit) + '…' : concreteText;
 
     return (
-        <main>
+        <>
+            <Helmet>
+                <title>エルピス｜心の悩みに寄り添う居場所</title>
+                <meta
+                    name="description"
+                    content="エルピスは、統合失調症・うつ病・双極性障害などに悩む方に寄り添い、改善へと導くケアを提供する居場所です。"
+                />
+            </Helmet>
+            <main>
 
-            {/* <!-- ヒーロー --> */}
-            <Hero title="エルピスへようこそ" subTitle="" backgroundImage="/images/hero/background-image/hero-background-image.jpg"></Hero>
-            {/* <!-- ヒーローナビ --> */}
-            <section className="hero-nav">
-                <div className="hero-nav-title">
-                    <FlowerDecoration src="flower4.png" />
-                    <h3>{isMobile ? "気になる項目をタップしてください" : "何について知りたいですか？"}</h3>
-                </div>
-                <div className="fade-item hero-nav-items row">
-                    <a href="#about" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('about'); }}>
-                        <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-thinking.png`} alt="" width="100" />
-                        <p>{isMobile ? "エルピスとは" : "何してくれるの？"}</p>
-                    </a>
-                    <a href="#counselor" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('counselor'); }}>
-                        <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-speaking.png`} alt="" width="100" />
-                        <p>{isMobile ? "代表の考え" : "代表の考え"}</p>
-                    </a>
-                    <a href="#use-cases" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('use-cases'); }}>
-                        <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-listening.png`} alt="" width="100" />
-                        <p>{isMobile ? "対象症例" : "対象の症例は？"}</p>
-                    </a>
-                    <a href="#access" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('access'); }}>
-                        <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-helper.png`} alt="" width="100" />
-                        <p>{isMobile ? "アクセス" : "どこにあるの？"}</p>
-                    </a>
-                </div>
-            </section>
+                {/* <!-- ヒーロー --> */}
+                <Hero title="エルピスへようこそ" subTitle="" backgroundImage="/images/hero/background-image/hero-background-image.jpg"></Hero>
+                {/* <!-- ヒーローナビ --> */}
+                <section className="hero-nav">
+                    <div className="hero-nav-title">
+                        <FlowerDecoration src="flower4.png" />
+                        <h3>{isMobile ? "気になる項目をタップしてください" : "何について知りたいですか？"}</h3>
+                    </div>
+                    <div className="fade-item hero-nav-items row">
+                        <a href="#about" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('about'); }}>
+                            <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-thinking.png`} alt="" width="100" />
+                            <p>{isMobile ? "エルピスとは" : "何してくれるの？"}</p>
+                        </a>
+                        <a href="#counselor" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('counselor'); }}>
+                            <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-speaking.png`} alt="" width="100" />
+                            <p>{isMobile ? "代表の考え" : "代表の考え"}</p>
+                        </a>
+                        <a href="#use-cases" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('use-cases'); }}>
+                            <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-listening.png`} alt="" width="100" />
+                            <p>{isMobile ? "対象症例" : "対象の症例は？"}</p>
+                        </a>
+                        <a href="#access" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('access'); }}>
+                            <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-helper.png`} alt="" width="100" />
+                            <p>{isMobile ? "アクセス" : "どこにあるの？"}</p>
+                        </a>
+                    </div>
+                </section>
 
-            {/* <!-- エルピスって何 --> */}
-            <section className="about column" id="about">
-                <FlowerDecoration src="flower5.png" />
-                <h2>エルピスとは？</h2>
-                <div className="about-content-right">
-                    <p>
-                        {showAboutFull || aboutText.length <= aboutLimit ? aboutText : aboutShort}
-                        {aboutText.length > aboutLimit && (
-                            <button className="more-btn" onClick={() => setShowAboutFull(v => !v)}>
-                                {showAboutFull ? '閉じる' : 'もっと見る'}
-                            </button>
-                        )}
-                    </p>
-                </div>
-
-
-                {/*<Button text="詳細はこちら" link="/"></Button> */}
-            </section>
-
-            {/* <!-- どんな人が話を聞いてくれるの？ --> */}
-            <section className="counselor" id="counselor">
-
-                <div className="counselor-main container row fade-in">
-                    <div className="counselor-left ">
-                        <FlowerDecoration src="flower6.png" />
-                        <h2>代表紹介</h2>
-                        <p className="counselor-name">代表取締役　今西三千代</p>
+                {/* <!-- エルピスって何 --> */}
+                <section className="about column" id="about">
+                    <FlowerDecoration src="flower5.png" />
+                    <h2>エルピスとは？</h2>
+                    <div className="about-content-right">
                         <p>
-                            {showCounselorFull || counselorText.length <= counselorLimit ? counselorText : counselorShort}
-                            {counselorText.length > counselorLimit && (
-                                <button className="more-btn" onClick={() => setShowCounselorFull(v => !v)}>
-                                    {showCounselorFull ? '閉じる' : 'もっと見る'}
+                            {showAboutFull || aboutText.length <= aboutLimit ? aboutText : aboutShort}
+                            {aboutText.length > aboutLimit && (
+                                <button className="more-btn" onClick={() => setShowAboutFull(v => !v)}>
+                                    {showAboutFull ? '閉じる' : 'もっと見る'}
                                 </button>
                             )}
                         </p>
-                        <Link to="/counselor" style={{ textDecoration: 'none' }}><Button text="代表の想い" /></Link>
                     </div>
-                    {/* 第二リリース　おばあちゃんの画像 */}
-                    {/* <div className="counselor-right">
+
+
+                    {/*<Button text="詳細はこちら" link="/"></Button> */}
+                </section>
+
+                {/* <!-- どんな人が話を聞いてくれるの？ --> */}
+                <section className="counselor" id="counselor">
+
+                    <div className="counselor-main container row fade-in">
+                        <div className="counselor-left ">
+                            <FlowerDecoration src="flower6.png" />
+                            <h2>代表紹介</h2>
+                            <p className="counselor-name">代表取締役　今西三千代</p>
+                            <p>
+                                {showCounselorFull || counselorText.length <= counselorLimit ? counselorText : counselorShort}
+                                {counselorText.length > counselorLimit && (
+                                    <button className="more-btn" onClick={() => setShowCounselorFull(v => !v)}>
+                                        {showCounselorFull ? '閉じる' : 'もっと見る'}
+                                    </button>
+                                )}
+                            </p>
+                            <Link to="/counselor" style={{ textDecoration: 'none' }}><Button text="代表の想い" /></Link>
+                        </div>
+                        {/* 第二リリース　おばあちゃんの画像 */}
+                        {/* <div className="counselor-right">
                         <img src={`${process.env.PUBLIC_URL}/images/person/wonyon.jpg`} alt="今西三千代の写真" />
                     </div> */}
 
-                </div>
-                {/* <div className="support-member container column fade-in">
+                    </div>
+                    {/* <div className="support-member container column fade-in">
                     <h3>サポートメンバー</h3>
                     <div className="support-member-items row">
                         <div className="support-member-item column">
@@ -160,10 +170,10 @@ function HomePage() {
                     </div>
 
                 </div> */}
-            </section>
+                </section>
 
-            {/* <!-- どんな人が来てるの？ --> */}
-            {/* <section className="use-cases fade-in" id="use-cases">
+                {/* <!-- どんな人が来てるの？ --> */}
+                {/* <section className="use-cases fade-in" id="use-cases">
                 <div className="column white-bg">
                     <div className="column">
                         <h2>対象となる症状や実績</h2>
@@ -185,58 +195,59 @@ function HomePage() {
                 </div>
 
             </section> */}
-            <div id="use-cases">
-                <SymptomSection />
-            </div>
-
-            {/* 具体的な症例セクション */}
-            <section className="concrete-cases fade-in" id="concrete-cases">
-
-                <FlowerDecoration src="flower7.png" />
-
-
-
-                <div className="column concrete-cases">
-                    <h2>具体的な症例</h2>
-                    <h3 className="concrete-cases__subtitle">三男：脳性麻痺・発作1日600回からの回復</h3>
-                    <div className="concrete-cases-content">
-                        <p>
-                            {showConcreteFull || concreteText.length <= concreteLimit ? concreteText : concreteShort}
-                            {concreteText.length > concreteLimit && (
-                                <button className="more-btn" onClick={() => setShowConcreteFull(v => !v)}>
-                                    {showConcreteFull ? '閉じる' : 'もっと見る'}
-                                </button>
-                            )}
-                        </p>
-                    </div>
+                <div id="use-cases">
+                    <SymptomSection />
                 </div>
-            </section>
 
-            <section className="access fade-in" id="access">
-                <div className="column access">
-                    <FlowerDecoration src="flower4.png" />
-                    <h2>アクセス</h2>
+                {/* 具体的な症例セクション */}
+                <section className="concrete-cases fade-in" id="concrete-cases">
 
-                    <Map />
+                    <FlowerDecoration src="flower7.png" />
 
-                    <div className="access-info">
-                        <div className="access-card">
-                            <div>
-                                <h3>駅からの送迎</h3>
-                                <p>＊最寄の駅（東金駅、成東駅）まで車でお迎えにあがります。</p>
-                            </div>
-                        </div>
-                        <div className="access-card">
-                            <div>
-                                <h3>車でお越しの方</h3>
-                                <p>東金有料道路山武成東ICで降り、車で５分</p>
-                            </div>
+
+
+                    <div className="column concrete-cases">
+                        <h2>具体的な症例</h2>
+                        <h3 className="concrete-cases__subtitle">三男：脳性麻痺・発作1日600回からの回復</h3>
+                        <div className="concrete-cases-content">
+                            <p>
+                                {showConcreteFull || concreteText.length <= concreteLimit ? concreteText : concreteShort}
+                                {concreteText.length > concreteLimit && (
+                                    <button className="more-btn" onClick={() => setShowConcreteFull(v => !v)}>
+                                        {showConcreteFull ? '閉じる' : 'もっと見る'}
+                                    </button>
+                                )}
+                            </p>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-        </main >
+                <section className="access fade-in" id="access">
+                    <div className="column access">
+                        <FlowerDecoration src="flower4.png" />
+                        <h2>アクセス</h2>
+
+                        <Map />
+
+                        <div className="access-info">
+                            <div className="access-card">
+                                <div>
+                                    <h3>駅からの送迎</h3>
+                                    <p>＊最寄の駅（東金駅、成東駅）まで車でお迎えにあがります。</p>
+                                </div>
+                            </div>
+                            <div className="access-card">
+                                <div>
+                                    <h3>車でお越しの方</h3>
+                                    <p>東金有料道路山武成東ICで降り、車で５分</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main >
+        </>
     );
 }
 
