@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "436c683beb214cffe2b7eace5d48cad9",
+    "revision": "05eac4eeb0ce0301e721960e27533056",
     "url": "/elpis/index.html"
   },
   {
