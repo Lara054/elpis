@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55202112652dae6b6541f38b744cebfe",
+    "revision": "caf9146f3230033ee255c0025cf2e63e",
     "url": "/elpis/index.html"
   },
   {
-    "revision": "a78eacaccc3b41dd21aa",
+    "revision": "48e60b787e46d389f1fd",
     "url": "/elpis/static/css/main.dc6141fe.chunk.css"
   },
   {
-    "revision": "55649dc8ab0ad39e8e84",
-    "url": "/elpis/static/js/2.687287b3.chunk.js"
+    "revision": "010402dfde5f99f099ac",
+    "url": "/elpis/static/js/2.3e972825.chunk.js"
   },
   {
     "revision": "1aef9e0d481a6908c30509eb88500877",
-    "url": "/elpis/static/js/2.687287b3.chunk.js.LICENSE.txt"
+    "url": "/elpis/static/js/2.3e972825.chunk.js.LICENSE.txt"
   },
   {
     "revision": "31fe72d8ed2de07ef4b8",
     "url": "/elpis/static/js/3.0265831e.chunk.js"
   },
   {
-    "revision": "a78eacaccc3b41dd21aa",
-    "url": "/elpis/static/js/main.a504ef1d.chunk.js"
+    "revision": "48e60b787e46d389f1fd",
+    "url": "/elpis/static/js/main.9af756a4.chunk.js"
   },
   {
     "revision": "c74f28758cf36eb6aa60",

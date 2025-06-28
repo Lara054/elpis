@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/elpis/static/css/main.dc6141fe.chunk.css",
-    "main.js": "/elpis/static/js/main.a504ef1d.chunk.js",
-    "main.js.map": "/elpis/static/js/main.a504ef1d.chunk.js.map",
+    "main.js": "/elpis/static/js/main.9af756a4.chunk.js",
+    "main.js.map": "/elpis/static/js/main.9af756a4.chunk.js.map",
     "runtime-main.js": "/elpis/static/js/runtime-main.51ed67d5.js",
     "runtime-main.js.map": "/elpis/static/js/runtime-main.51ed67d5.js.map",
-    "static/js/2.687287b3.chunk.js": "/elpis/static/js/2.687287b3.chunk.js",
-    "static/js/2.687287b3.chunk.js.map": "/elpis/static/js/2.687287b3.chunk.js.map",
+    "static/js/2.3e972825.chunk.js": "/elpis/static/js/2.3e972825.chunk.js",
+    "static/js/2.3e972825.chunk.js.map": "/elpis/static/js/2.3e972825.chunk.js.map",
     "static/js/3.0265831e.chunk.js": "/elpis/static/js/3.0265831e.chunk.js",
     "static/js/3.0265831e.chunk.js.map": "/elpis/static/js/3.0265831e.chunk.js.map",
     "index.html": "/elpis/index.html",
-    "precache-manifest.101b43b7c8167306acd47557a6ce73b9.js": "/elpis/precache-manifest.101b43b7c8167306acd47557a6ce73b9.js",
+    "precache-manifest.ae487fdc10d0ed918929b29ab1681cb9.js": "/elpis/precache-manifest.ae487fdc10d0ed918929b29ab1681cb9.js",
     "service-worker.js": "/elpis/service-worker.js",
     "static/css/main.dc6141fe.chunk.css.map": "/elpis/static/css/main.dc6141fe.chunk.css.map",
-    "static/js/2.687287b3.chunk.js.LICENSE.txt": "/elpis/static/js/2.687287b3.chunk.js.LICENSE.txt"
+    "static/js/2.3e972825.chunk.js.LICENSE.txt": "/elpis/static/js/2.3e972825.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.51ed67d5.js",
-    "static/js/2.687287b3.chunk.js",
+    "static/js/2.3e972825.chunk.js",
     "static/css/main.dc6141fe.chunk.css",
-    "static/js/main.a504ef1d.chunk.js"
+    "static/js/main.9af756a4.chunk.js"
   ]
 }
