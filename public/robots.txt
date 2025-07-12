@@ -1,5 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for Netlify-hosted site
+
 User-agent: *
 Disallow:
 
-Sitemap: https://lara054.github.io/elpis/sitemap.xml
+Sitemap: https://dulcet-bubblegum-1122ad.netlify.app/sitemap.xml

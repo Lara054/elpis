@@ -91,19 +91,19 @@ function HomePage() {
                     </div>
                     <div className="fade-item hero-nav-items row">
                         <a href="#about" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('about'); }}>
-                            <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-thinking.png`} alt="" width="100" />
+                            <img src="/images/hero/hero-nav-thinking.png" alt="" width="100" />
                             <p>{isMobile ? "エルピスとは" : "何してくれるの？"}</p>
                         </a>
                         <a href="#counselor" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('counselor'); }}>
-                            <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-speaking.png`} alt="" width="100" />
+                            <img src="/images/hero/hero-nav-speaking.png" alt="" width="100" />
                             <p>{isMobile ? "代表の考え" : "代表の考え"}</p>
                         </a>
                         <a href="#use-cases" className="hero-nav-item column offset" onClick={e => { e.preventDefault(); scrollToIdSmooth('use-cases'); }}>
-                            <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-listening.png`} alt="" width="100" />
+                            <img src="/images/hero/hero-nav-listening.png" alt="" width="100" />
                             <p>{isMobile ? "対象症例" : "対象の症例は？"}</p>
                         </a>
                         <a href="#access" className="hero-nav-item column" onClick={e => { e.preventDefault(); scrollToIdSmooth('access'); }}>
-                            <img src={`${process.env.PUBLIC_URL}/images/hero/hero-nav-helper.png`} alt="" width="100" />
+                            <img src="/images/hero/hero-nav-helper.png" alt="" width="100" />
                             <p>{isMobile ? "アクセス" : "どこにあるの？"}</p>
                         </a>
                     </div>

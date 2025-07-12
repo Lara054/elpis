@@ -71,7 +71,8 @@ function Header() {
                       <ul>
                         <li>
                           <a href="tel:08052750753" className="tel">
-                            <img src={`${process.env.PUBLIC_URL}/images/header/tel.png`} alt="電話番号" />
+                            <img src="/images/header/tel.png" alt="電話番号" />
+
                           </a>
                         </li>
                         <li className="menu-link"><Link to="/">ホーム</Link></li>
@@ -89,12 +90,12 @@ function Header() {
             <>
               <li className="nav-left">
                 <Link to="/">
-                  <img src={`${process.env.PUBLIC_URL}/images/header/logo.png`} alt="エルピスのロゴ" />
+                  <img src="/images/header/logo.png" alt="エルピスのロゴ" />
                 </Link>
               </li>
               <div className='nav-right column'>
                 <a href="tel:08052750753" className="tel">
-                  <img src={`${process.env.PUBLIC_URL}/images/header/tel.png`} alt="電話番号" />
+                  <img src="/images/header/tel.png" alt="電話番号" />
                 </a>
                 <div className="row pc-menu">
                   <li><Link to="/">ホーム</Link></li>

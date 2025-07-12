@@ -3,7 +3,7 @@ import '../css/components/hero.css';
 
 function Hero({ title, subTitle, backgroundImage }) {
     const heroStyle = backgroundImage
-        ? { backgroundImage: `url(${process.env.PUBLIC_URL}${backgroundImage})` }
+        ? { backgroundImage: `url(${backgroundImage})` }
         : {};
     return (
         <div className="hero" style={heroStyle}>

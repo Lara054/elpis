@@ -95,7 +95,7 @@
 .about {
     align-items: center;
     text-align: center;
-    /* background-image: url("/elpis/images/home/home-about-background-image.jpg"); */
+    /* background-image: url("/images/home/home-about-background-image.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@
 /* どんな人が話を聞いてくれるの？ */
 
 .use-cases {
-    /* background-image: url("/elpis/images/home/home-use-case-background-image.jpg"); */
+    /* background-image: url("/images/home/home-use-case-background-image.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

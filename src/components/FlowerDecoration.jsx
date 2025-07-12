@@ -5,7 +5,7 @@ function FlowerDecoration({ src }) {
     return (
         <div className="floating-flower-wrapper">
             <img
-                src={`${process.env.PUBLIC_URL}/images/decorations/${src}`}
+                src={`/images/decorations/${src}`}
                 alt="flower"
                 className="floating-flower fade-in"
             />
