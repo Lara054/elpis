@@ -45,10 +45,12 @@
     -->
   <title>React App</title>
   <script>
-    // リダイレクト先のパスを保存
-    const fullPath = location.pathname + location.search + location.hash;
-    sessionStorage.setItem('redirect', fullPath);
-    location.replace('/elpis/');
+    const redirect = sessionStorage.getItem('redirect');
+    if (redirect) {
+      sessionStorage.removeItem('redirect');
+      const fullPath = '/elpis' + redirect;
+      window.history.replaceState(null, null, fullPath);
+    }
   </script>
 
 </head>

@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <title>Redirecting...</title>
   <script>
-    // GitHub PagesのSPAルーティング対応
-    const redirectPath = location.pathname.replace('/elpis', '');
-    sessionStorage.setItem('redirect', redirectPath);
+    const fullPath = location.pathname + location.search + location.hash;
+    const path = fullPath.replace('/elpis', '');
+    sessionStorage.setItem('redirect', path);
     location.replace('/elpis/');
   </script>
+
 </head>
 
 <body>
