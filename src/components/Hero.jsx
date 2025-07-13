@@ -6,7 +6,7 @@ function Hero({ title, subTitle, backgroundImage }) {
         ? { backgroundImage: `url(${backgroundImage})` }
         : {};
     return (
-        <div className="hero" style={heroStyle}>
+        <div className="hero fade-in" style={heroStyle}>
             <div className="hero__overlay" />
             <div className="container column">
                 {title && <h1 className="hero__title">{title}</h1>}
