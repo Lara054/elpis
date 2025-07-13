@@ -33,7 +33,7 @@ function Counselor() {
             <Hero title=" 代表の想い" subTitle="" backgroundImage={"/images/hero/background-image/counselor-background-image.jpg"}></Hero>
             {/* <!-- ヒーローナビ --> */}
 
-            <div className="counselor_content">
+            <div className="counselor_content fade-in">
                 <CounselorItem
                     title="うつ病について"
                     text={`うつ病の根本には、"我（わがまま）"の存在があると、私は考えています。ここで言う“わがまま”とは、自分の感情や苦しみに心をとらわれすぎてしまい、周囲との関わりを断ち切ってしまう状態を指します。うつから回復するためには、まず自分の心の奥ばかりを見るのではなく、少しずつでも他者の心に目を向け、思いやることが大切です。「相手はいま何を感じているのか」「どんな言葉があたたかいだろうか」と、他人の心に寄り添おうとする練習を重ねていくうちに、やさしさや慈しみ、そして人を愛する心が少しずつ育まれていきます。その変化が起きると、次第に“わがまま”はほどけていき、「自分の想い」ではなく「目の前の誰か」の大切さに気づけるようになります。

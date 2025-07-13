@@ -84,7 +84,7 @@ function HomePage() {
                 {/* <!-- ヒーロー --> */}
                 <Hero title="エルピスへようこそ" subTitle="" backgroundImage="/images/hero/background-image/hero-background-image.jpg"></Hero>
                 {/* <!-- ヒーローナビ --> */}
-                <section className="hero-nav">
+                <section className="hero-nav fade-in">
                     <div className="hero-nav-title">
                         <FlowerDecoration src="flower4.png" />
                         <h3>{isMobile ? "気になる項目をタップしてください" : "何について知りたいですか？"}</h3>

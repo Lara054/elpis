@@ -27,7 +27,7 @@ const FacilityPage = () => {
                     </div>
                 ) : (
                     <>
-                        <p className="facility-description">
+                        <p className="facility-description fade-in">
                             エルピスでは、ご本人が安心して過ごせるような環境づくりを大切にしています。<br />
                         </p>
                         <div className="photo-grid">

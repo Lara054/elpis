@@ -133,3 +133,9 @@ a:focus {
 .white-nowrap {
     white-space: nowrap;
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in 0.1s forwards;
+    /* 最後の0.1sが遅延 */
+}
