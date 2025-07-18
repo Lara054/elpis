@@ -73,11 +73,8 @@ function HomePage() {
     return (
         <>
             <Helmet>
-                <title>エルピス｜心の悩みに寄り添う居場所</title>
-                <meta
-                    name="description"
-                    content="エルピスは、統合失調症・うつ病・双極性障害などに悩む方に寄り添い、改善へと導くケアを提供する居場所です。"
-                />
+                <title>障がい・心のケア支援施設コイノニア｜住み込み・通い対応可能</title>
+                <meta name="description" content="50年以上の実績で心の病や障がいに対応。住み込み支援やカウンセリングで自立をサポートします。" />
             </Helmet>
             <main>
 

@@ -17,6 +17,13 @@ const FacilityPage = () => {
     const underConstruction = false;
 
     return (
+
+        <>
+            <Helmet>
+                <title>支援施設のご紹介｜安心できる住環境とケア体制</title>
+                <meta name="description" content="住み込みにも対応した、静かで安心できる環境をご紹介。心の病や障がいを持つ方が落ち着いて過ごせる空間を整えています。" />
+            </Helmet>
+
         <main>
             <Hero title="施設紹介" backgroundImage={"/images/hero/background-image/contact-background-image.jpg"} />
             <section className="facility">
@@ -41,10 +48,27 @@ const FacilityPage = () => {
                                 </div>
                             ))}
                         </div>
-                    </>
-                )}
-            </section>
-        </main>
+                    ) : (
+                        <>
+                            <p className="facility-description">
+                                エルピスでは、ご本人が安心して過ごせるような環境づくりを大切にしています。<br />
+                            </p>
+                            <div className="photo-grid">
+                                {photos.map((photo, index) => (
+                                    <div key={index} className={`photo-card fade-in delay-${index + 1}`}>
+                                        <img
+                                            src={`${photo.src}`}
+                                            alt={photo.caption}
+                                        />
+                                        <p className="photo-caption">{photo.caption}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </>
+                    )}
+                </section>
+            </main>
+        </>
     );
 };
 
