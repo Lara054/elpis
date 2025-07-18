@@ -70,15 +70,15 @@ function Header() {
                     <div className={`menu-dropdown${menuOpen ? ' open' : ''}`}>
                       <ul>
                         <li>
-                          <a href="tel:08052750753" className="tel">
+                          <a href="tel:08052750753" className="tel" onClick={() => setMenuOpen(false)}>
                             <img src="/images/header/tel.png" alt="電話番号" />
 
                           </a>
                         </li>
-                        <li className="menu-link"><Link to="/">ホーム</Link></li>
-                        <li className="menu-link"><Link to="/facility">施設紹介</Link></li>
-                        <li className="menu-link"><Link to="/counselor">カウンセラーの想い</Link></li>
-                        <li><Link to="/contact"><Button text="ご相談はこちら" /></Link></li>
+                        <li className="menu-link"><Link to="/" onClick={() => setMenuOpen(false)}>ホーム</Link></li>
+                        <li className="menu-link"><Link to="/facility" onClick={() => setMenuOpen(false)}>施設紹介</Link></li>
+                        <li className="menu-link"><Link to="/counselor" onClick={() => setMenuOpen(false)}>カウンセラーの想い</Link></li>
+                        <li><Link to="/contact" onClick={() => setMenuOpen(false)}><Button text="ご相談はこちら" /></Link></li>
                       </ul>
                     </div>
                   </div>
